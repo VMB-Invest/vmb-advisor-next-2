@@ -1,103 +1,208 @@
 import Image from "next/image";
+import { ArrowRight, Users, TrendingUp } from "lucide-react";
+import RevealSection from "@/components/RevealSection";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import HeroSection from "@/components/HeroSection";
+import HomeTestimonials from "@/components/HomeTestimonials";
+import { Button } from "@/components/ui/button";
+
+const services = [
+  {
+    icon: TrendingUp,
+    title: "Planejamento de Investimentos",
+    description: "Estratégias personalizadas para maximizar seus investimentos.",
+  },
+  {
+    icon: TrendingUp,
+    title: "Planejamento Imobiliário",
+    description: "Assessoria completa para aquisição e gestão de imóveis.",
+  },
+  {
+    icon: TrendingUp,
+    title: "Planejamento Empresarial",
+    description: "Soluções financeiras para o crescimento do seu negócio.",
+  },
+  {
+    icon: Users,
+    title: "Planejamento Familiar",
+    description: "Planejamento financeiro para garantir o futuro da sua família.",
+  },
+];
+
+const testimonials = [
+  {
+    quote: "O planejamento familiar da VMB Invest me proporcionou tranquilidade para o futuro dos meus filhos. A equipe é extremamente profissional e atenciosa!",
+    author: "Fernanda Costa"
+  },
+  {
+    quote: "Após anos tentando organizar minhas finanças, encontrei na VMB Advisor o parceiro ideal. Em apenas 6 meses, consegui realizar meu sonho de comprar meu primeiro imóvel.",
+    author: "Roberto Mendes"
+  },
+  {
+    quote: "A assessoria imobiliária da VMB foi decisiva para encontrarmos o imóvel perfeito para nossa família. O conhecimento do mercado e a atenção aos detalhes fizeram toda a diferença.",
+    author: "Juliana e Marcos"
+  },
+  {
+    quote: "Graças ao planejamento empresarial da VMB, consegui expandir meu negócio de forma sustentável. O retorno sobre investimento superou todas as expectativas.",
+    author: "Carlos Silva"
+  },
+  {
+    quote: "A consultoria de investimentos da VMB transformou minha relação com o dinheiro. Hoje tenho uma carteira diversificada e rendimentos consistentes.",
+    author: "Ana Paula"
+  },
+  {
+    quote: "Profissionalismo exemplar! A VMB me ajudou a estruturar um plano de aposentadoria sólido. Agora durmo tranquilo sabendo que meu futuro está garantido.",
+    author: "Eduardo Santos"
+  },
+  {
+    quote: "Excelente atendimento e resultados surpreendentes. Em 1 ano de parceria, meus investimentos tiveram uma performance muito acima da média do mercado.",
+    author: "Marina Oliveira"
+  },
+  {
+    quote: "A VMB me orientou na compra do meu segundo imóvel para investimento. A estratégia deles me permitiu ter uma renda passiva significativa.",
+    author: "Rafael Costa"
+  }
+];
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="min-h-screen bg-background">
+      <Header />
+      <HeroSection />
+      
+      {/* Números que falam por si */}
+      <section className="relative pt-20 bg-background">
+        {/* Botões de Ação */}
+        <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 z-20">
+          <RevealSection>
+            <div className="hidden sm:flex flex-col sm:flex-row justify-center items-center gap-6">
+              <a href="https://api.whatsapp.com/send/?phone=5521972674227&text=Ol%C3%A1%21+Gostaria+de+me+tornar+cliente+da+VMB+Advisor" target="_blank" rel="noopener noreferrer">
+                <Button className="w-64 bg-white hover:underline text-black font-semibold px-8 py-4 text-sm uppercase tracking-wide shadow-lg">SEJA CLIENTE</Button>
+              </a>            
+              <a href="https://api.whatsapp.com/send/?phone=5521972674227&text=Ol%C3%A1%21+Tenho+interesse" target="_blank" rel="noopener noreferrer">
+                <Button className="w-64 bg-primary hover:underline text-white font-semibold px-8 py-4 text-sm uppercase tracking-wide shadow-lg">Planner financeiro</Button>
+              </a>
+            </div>
+          </RevealSection>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div className="max-w-[1280px] mx-auto px-4 md:px-10 pt-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <RevealSection>
+              <div className="grid grid-cols-3 grid-rows-3 gap-4 h-[600px]">
+                <div className="bg-primary rounded-xl p-6 col-span-1 row-span-2 flex flex-col justify-between border">
+                  <div className="text-background text-xs font-semibold uppercase tracking-wide mb-2">SOB CUSTÓDIA</div>
+                  <div className="text-4xl md:text-5xl font-bold text-background">750M +</div>
+                </div>            
+                
+                <div className="bg-background border-2 border-white rounded-xl p-6 col-span-1 row-span-2 flex flex-col justify-between">
+                  <div className="text-gray-300 text-xs font-semibold uppercase tracking-wide mb-2">COLABORADORES</div>
+                  <div className="text-4xl md:text-5xl font-bold text-white">+121</div>
+                </div>
+                
+                <div className="bg-background border-2 border-white rounded-xl p-6 col-span-1 row-span-1 flex flex-col justify-between">
+                  <div className="text-gray-300 text-xs font-semibold uppercase tracking-wide mb-2">NPS</div>
+                  <div className="text-3xl md:text-4xl font-bold text-white">94.4</div>
+                </div>
+                
+                <div className="bg-background border-2 border-white rounded-xl p-6 col-span-1 row-span-1 flex flex-col justify-between">
+                  <div className="text-gray-300 text-xs font-semibold uppercase tracking-wide mb-2">CLIENTES</div>
+                  <div className="text-3xl md:text-4xl font-bold text-white">3700+</div>
+                </div>
+              </div>
+            </RevealSection>
+
+            <RevealSection delay={0.2}>
+              <h2 className="text-3xl md:text-4xl mb-6">
+                <span className="font-heading font-semibold text-white">Nossos</span> <span className="text-modern">Números</span> <span className="font-heading font-semibold text-white">falam por si</span>
+              </h2>
+              <p className="text-muted-foreground mb-4">Nossa trajetória de sucesso é refletida nos números que conquistamos.</p>
+              <p className="text-muted-foreground">Estamos comprometidos em manter a excelência.</p>
+            </RevealSection>
+          </div>
+        </div>
+      </section>
+
+      {/* Serviços */}
+      <section className="bg-background">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-10">
+          <RevealSection>
+            <h2 className="text-3xl md:text-4xl text-center mb-4"><span className="text-impact">Nossos</span> <span className="font-heading font-semibold text-white">Serviços</span></h2>
+            <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">Oferecemos soluções completas para gestão e crescimento do seu patrimônio</p>
+          </RevealSection>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {services.map((service, index) => (
+              <RevealSection key={index} delay={index * 0.1}>
+                <div className="bg-card border border-border rounded-lg p-6 hover:border-primary transition-all duration-300 h-full">
+                  <service.icon className="w-12 h-12 text-primary mb-4" />
+                  <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
+                  <p className="text-muted-foreground">{service.description}</p>
+                </div>
+              </RevealSection>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Depoimentos */}
+      <HomeTestimonials testimonials={testimonials} />
+
+      {/* Quem Somos */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+            <RevealSection>
+              <h2 className="text-3xl md:text-4xl text-gray-900 mb-6">
+                <span className="font-heading font-bold">Construa seu</span> <span className="font-accent font-black text-primary">legado</span>
+              </h2>
+              <p className="text-gray-600 text-lg leading-relaxed">Nosso propósito é fazer parte de todas as grandes conquistas da vida das pessoas.</p>
+            </RevealSection>
+
+            <RevealSection delay={0.2}>
+              <div className="aspect-video bg-muted rounded-2xl overflow-hidden">
+                <Image src="/awards.jpg" alt="Sala de reuniões VMB Advisor" width={800} height={450} className="w-full h-full object-cover" />
+              </div>
+            </RevealSection>
+          </div>
+        </div>
+      </section>
+
+      {/* Sobre */}
+      <section className="py-20 bg-black">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <RevealSection>
+              <div className="aspect-video bg-muted rounded-lg overflow-hidden">
+                <Image src="/office-1.png" alt="Escritório VMB Advisor" width={800} height={450} className="w-full h-full object-cover" />
+              </div>
+            </RevealSection>
+
+            <RevealSection delay={0.2}>
+              <h2 className="text-3xl md:text-4xl mb-6"><span className="font-display font-semibold text-white">Sobre a</span> <span className="text-emphasis">VMB Advisor</span></h2>
+              <p className="text-muted-foreground mb-4">Somos uma consultoria especializada em soluções financeiras estratégicas.</p>
+              <p className="text-muted-foreground mb-6">Com anos de experiência no mercado, nossa equipe oferece atendimento personalizado.</p>
+              <a href="https://api.whatsapp.com/send/?phone=5521972674227" target="_blank" rel="noopener noreferrer">
+                <Button className="border-primary text-primary hover:bg-primary hover:text-background">Saiba Mais <ArrowRight className="ml-2 w-4 h-4" /></Button>
+              </a>
+            </RevealSection>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-20 bg-gradient-to-b from-background to-black">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-10 text-center">
+          <RevealSection>
+            <h2 className="text-3xl md:text-4xl mb-6"><span className="font-heading font-semibold text-white">Pronto para</span> <span className="text-impact">transformar</span> <span className="font-heading font-semibold text-white">seu patrimônio?</span></h2>
+            <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">Entre em contato conosco e descubra como podemos ajudar você</p>
+            <a href="https://api.whatsapp.com/send/?phone=5521972674227" target="_blank" rel="noopener noreferrer">
+              <Button className="bg-primary hover:bg-primary/90 text-background font-semibold">Fale com um Especialista <ArrowRight className="ml-2 w-5 h-5" /></Button>
+            </a>
+          </RevealSection>
+        </div>
+      </section>
+      <Footer />
     </div>
   );
 }
