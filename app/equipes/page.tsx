@@ -31,23 +31,23 @@ export default function Equipe() {
       <Header />
 
       {/* Hero */}
-      <section className="relative min-h-[400px] flex items-center justify-center overflow-hidden bg-gradient-to-b from-black to-background">
+      <section className="relative min-h-[350px] sm:min-h-[400px] flex items-center justify-center overflow-hidden bg-gradient-to-b from-black to-background">
         <div className="absolute inset-0 bg-[url('/api/placeholder/1920/600')] bg-cover bg-center opacity-20" />
-        <div className="relative z-10 max-w-[1280px] mx-auto px-4 md:px-10 py-20 text-center">
-          <h1 className="text-4xl md:text-6xl font-800 mb-6 text-white">
-            <span className="font-jamjuree font-700 text-white mx-2">Nossa</span>
-            <span className="font-jakarta font-800 text-[#29C8EB] mx-2">Equipe</span>
+        <div className="relative z-10 max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10 py-12 sm:py-16 md:py-20 text-center">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-800 mb-4 sm:mb-6 text-white">
+            <span className="font-jamjuree font-700 text-white mx-1">Nossa</span>
+            <span className="font-jakarta font-800 text-[#29C8EB] mx-1">Equipe</span>
           </h1>
-          <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto px-4">
             Profissionais altamente qualificados dedicados ao seu sucesso
           </p>
         </div>
       </section>
 
       {/* Equipe */}
-      <section className="pb-20">
-        <div className="max-w-[1280px] mx-auto px-4 md:px-10">          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <section className="pb-12 sm:pb-16 md:pb-20">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10">          
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {equipe.map((membro, index) => (
               <RevealSection key={index} delay={index * 0.1}>
                 <div className="bg-card border border-border rounded-lg overflow-hidden hover:border-[#29C8EB] transition-all duration-300 group h-full flex flex-col">
@@ -60,10 +60,10 @@ export default function Equipe() {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
-                  <div className="p-6 flex-1 flex flex-col">
-                    <h3 className="text-xl font-jamjuree font-600 mb-1">{membro.nome}</h3>
-                    <p className="text-[#29C8EB] text-sm mb-3">{membro.cargo}</p>
-                    <p className="text-muted-foreground text-sm mb-4 flex-1">{membro.descricao}</p>
+                  <div className="p-5 sm:p-6 flex-1 flex flex-col">
+                    <h3 className="text-lg sm:text-xl font-jamjuree font-600 mb-1">{membro.nome}</h3>
+                    <p className="text-[#29C8EB] text-xs sm:text-sm mb-3">{membro.cargo}</p>
+                    <p className="text-muted-foreground text-xs sm:text-sm mb-4 flex-1">{membro.descricao}</p>
                     <div className="flex gap-3 mt-auto">
                       <a
                         href="#"
@@ -89,12 +89,12 @@ export default function Equipe() {
       </section>
 
       {/* Cultura */}
-      <section className="py-20 bg-black">
-        <div className="max-w-[1280px] mx-auto px-4 md:px-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <section className="py-12 sm:py-16 md:py-20 bg-black">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
             <RevealSection>
-              <h2 className="text-3xl md:text-4xl font-jamjuree font-700 mb-6">Nossa Cultura</h2>
-              <div className="space-y-4 text-muted-foreground">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-jamjuree font-700 mb-4 sm:mb-6 text-center lg:text-left">Nossa Cultura</h2>
+              <div className="space-y-3 sm:space-y-4 text-muted-foreground text-sm sm:text-base text-center lg:text-left">
                 <p>
                   Na VMB Advisor, cultivamos um ambiente de colaboração, inovação e crescimento contínuo. 
                   Acreditamos que o sucesso dos nossos clientes começa com uma equipe motivada e comprometida.

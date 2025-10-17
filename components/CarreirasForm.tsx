@@ -71,20 +71,20 @@ export default function CarreirasForm({ onSubmit }: CarreirasFormProps) {
   };
 
   return (
-    <section className="py-20">
-      <div className="max-w-[1280px] mx-auto px-4 md:px-10">
+    <section className="py-12 sm:py-16 md:py-20">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10">
         <div className="max-w-2xl mx-auto">
           <RevealSection>
-            <h2 className="text-3xl md:text-4xl font-jamjuree font-700 text-center mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-jamjuree font-700 text-center mb-3 sm:mb-4 px-2">
               Candidatura Espontânea
             </h2>
-            <p className="text-center text-muted-foreground mb-8">
+            <p className="text-center text-muted-foreground text-sm sm:text-base mb-6 sm:mb-8 px-4">
               Não encontrou a vaga ideal? Envie seu currículo e entraremos em contato quando surgir uma oportunidade
             </p>
           </RevealSection>
 
           <RevealSection delay={0.2}>
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5">
               <div>
                 <Input
                   type="text"
@@ -92,7 +92,7 @@ export default function CarreirasForm({ onSubmit }: CarreirasFormProps) {
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   required
-                  className="bg-card border-border"
+                  className="bg-card border-border h-11 sm:h-12 text-sm sm:text-base"
                 />
               </div>
               <div>
@@ -102,7 +102,7 @@ export default function CarreirasForm({ onSubmit }: CarreirasFormProps) {
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   required
-                  className="bg-card border-border"
+                  className="bg-card border-border h-11 sm:h-12 text-sm sm:text-base"
                 />
               </div>
               <div>
@@ -112,12 +112,12 @@ export default function CarreirasForm({ onSubmit }: CarreirasFormProps) {
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                   required
-                  className="bg-card border-border"
+                  className="bg-card border-border h-11 sm:h-12 text-sm sm:text-base"
                 />
               </div>
               <div>
                 <Select value={formData.area} onValueChange={(value) => setFormData({ ...formData, area: value })}>
-                  <SelectTrigger className="bg-card border-border">
+                  <SelectTrigger className="bg-card border-border h-11 sm:h-12 text-sm sm:text-base">
                     <SelectValue placeholder="Área de interesse" />
                   </SelectTrigger>
                   <SelectContent>
@@ -136,13 +136,13 @@ export default function CarreirasForm({ onSubmit }: CarreirasFormProps) {
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   required
                   rows={6}
-                  className="bg-card border-border"
+                  className="bg-card border-border text-sm sm:text-base min-h-[120px] sm:min-h-[140px]"
                 />
               </div>
               <Button
                 type="submit"
                 disabled={isLoading}
-                className="w-full bg-[#29C8EB] hover:bg-[#29C8EB]/90 text-background font-semibold disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+                className="w-full bg-[#29C8EB] hover:bg-[#29C8EB]/90 text-background font-semibold disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer h-11 sm:h-12 text-sm sm:text-base"
               >
                 {isLoading ? "Enviando..." : "Enviar Candidatura"}
               </Button>

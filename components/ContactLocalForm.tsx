@@ -59,16 +59,16 @@ export default function ContactLocalForm({ onSubmit }: ContactLocalFormProps) {
 
   return (
     <RevealSection>
-      <h1 className="text-4xl md:text-5xl font-jakarta font-800 mb-6">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-jakarta font-800 mb-4 sm:mb-6 text-center lg:text-left">
         Entre em <span className="text-[#29C8EB]">Contato</span>
       </h1>
-      <p className="text-muted-foreground mb-8">
+      <p className="text-muted-foreground text-sm sm:text-base mb-6 sm:mb-8 text-center lg:text-left">
         Estamos aqui para ajudar você a planejar seu futuro financeiro. Entre em contato conosco para discutir suas necessidades de investimento.
       </p>
 
-      <form onSubmit={handleSubmit} className="space-y-6">
+      <form onSubmit={handleSubmit} className="space-y-5 sm:space-y-6">
         <div>
-          <label htmlFor="name" className="block text-sm font-medium mb-2">
+          <label htmlFor="name" className="block text-xs sm:text-sm font-medium mb-2">
             Nome
           </label>
           <Input
@@ -78,12 +78,12 @@ export default function ContactLocalForm({ onSubmit }: ContactLocalFormProps) {
             value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
             required
-            className="bg-secondary border-border"
+            className="bg-secondary border-border h-11 sm:h-12 text-sm sm:text-base"
           />
         </div>
 
         <div>
-          <label htmlFor="email" className="block text-sm font-medium mb-2">
+          <label htmlFor="email" className="block text-xs sm:text-sm font-medium mb-2">
             Email
           </label>
           <Input
@@ -93,12 +93,12 @@ export default function ContactLocalForm({ onSubmit }: ContactLocalFormProps) {
             value={formData.email}
             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
             required
-            className="bg-secondary border-border"
+            className="bg-secondary border-border h-11 sm:h-12 text-sm sm:text-base"
           />
         </div>
 
         <div>
-          <label htmlFor="phone" className="block text-sm font-medium mb-2">
+          <label htmlFor="phone" className="block text-xs sm:text-sm font-medium mb-2">
             Telefone
           </label>
           <Input
@@ -108,12 +108,12 @@ export default function ContactLocalForm({ onSubmit }: ContactLocalFormProps) {
             value={formData.phone}
             onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
             required
-            className="bg-secondary border-border"
+            className="bg-secondary border-border h-11 sm:h-12 text-sm sm:text-base"
           />
         </div>
 
         <div>
-          <label htmlFor="message" className="block text-sm font-medium mb-2">
+          <label htmlFor="message" className="block text-xs sm:text-sm font-medium mb-2">
             Mensagem
           </label>
           <Textarea
@@ -123,14 +123,14 @@ export default function ContactLocalForm({ onSubmit }: ContactLocalFormProps) {
             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
             required
             rows={5}
-            className="bg-secondary border-border"
+            className="bg-secondary border-border text-sm sm:text-base min-h-[120px] sm:min-h-[140px]"
           />
         </div>
 
         <Button
           type="submit"
           disabled={isLoading}
-          className="w-full bg-[#29C8EB] hover:bg-[#29C8EB]/90 text-background font-semibold disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+          className="w-full bg-[#29C8EB] hover:bg-[#29C8EB]/90 text-background font-semibold disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer h-11 sm:h-12 text-sm sm:text-base"
         >
           {isLoading ? 'Enviando...' : 'Enviar Mensagem'}
         </Button>

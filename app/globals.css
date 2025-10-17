@@ -39,33 +39,80 @@
   --chart-5: 190 30% 20%;
 }
 
-/* Base Styles */
+/* Base Styles - Mobile First */
 body {
   background: hsl(var(--background));
   color: hsl(var(--foreground));
   font-family: 'Roboto Flex', sans-serif;
   font-weight: 300;
+  font-size: 14px; /* Mobile base */
   letter-spacing: -0.01em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+@media (min-width: 640px) {
+  body {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-bai-jamjuree), sans-serif;
   font-weight: 600;
   letter-spacing: 0.02em;
+  line-height: 1.2;
 }
 
-/* Variações de títulos */
+/* Variações de títulos - Mobile First */
 h1 {
   font-family: var(--font-plus-jakarta-sans), sans-serif;
   font-weight: 800;
   letter-spacing: -0.02em;
+  font-size: 1.75rem; /* 28px mobile */
+}
+
+@media (min-width: 640px) {
+  h1 {
+    font-size: 2.25rem; /* 36px */
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem; /* 40px */
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 3rem; /* 48px */
+  }
 }
 
 h2 {
   font-family: var(--font-bai-jamjuree), sans-serif;
   font-weight: 700;
+  font-size: 1.5rem; /* 24px mobile */
+}
+
+@media (min-width: 640px) {
+  h2 {
+    font-size: 1.875rem; /* 30px */
+  }
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 2.25rem; /* 36px */
+  }
 }
 
 * {

@@ -41,28 +41,28 @@ const Carreiras = () => {
       />
 
       {/* Por que trabalhar conosco */}
-      <section className="py-20">
-        <div className="max-w-[1280px] mx-auto px-4 md:px-10">
+      <section className="py-12 sm:py-16 md:py-20">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10">
           <RevealSection>
-            <h2 className="text-3xl md:text-4xl text-center mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl text-center mb-3 sm:mb-4 px-2">
               <span className="font-jamjuree font-700 text-white mx-1">Por</span>
               <span className="font-jakarta font-800 text-[#29C8EB] mx-1">que</span>
               <span className="font-poppins font-600 text-white mx-1">trabalhar</span>
               <span className="font-caveat font-bold text-[#29C8EB] mx-1">na</span>
               <span className="font-jamjuree font-700 text-white mx-1">VMB Advisor?</span>
             </h2>
-            <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+            <p className="text-center text-muted-foreground text-sm sm:text-base mb-8 sm:mb-12 max-w-2xl mx-auto px-4">
               Oferecemos um ambiente de trabalho inspirador e oportunidades de crescimento
             </p>
           </RevealSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {beneficios.map((beneficio, index) => (
               <RevealSection key={index} delay={index * 0.1}>
-                <div className="bg-card border border-border rounded-lg p-6 hover:border-[#29C8EB] transition-all duration-300 text-center h-full">
-                  <beneficio.icon className="w-12 h-12 text-[#29C8EB] mx-auto mb-4" />
-                  <h3 className="text-xl font-jamjuree font-600 mb-3">{beneficio.title}</h3>
-                  <p className="text-muted-foreground">{beneficio.description}</p>
+                <div className="bg-card border border-border rounded-lg p-5 sm:p-6 hover:border-[#29C8EB] transition-all duration-300 text-center h-full">
+                  <beneficio.icon className="w-10 h-10 sm:w-12 sm:h-12 text-[#29C8EB] mx-auto mb-3 sm:mb-4" />
+                  <h3 className="text-lg sm:text-xl font-jamjuree font-600 mb-2 sm:mb-3">{beneficio.title}</h3>
+                  <p className="text-muted-foreground text-sm sm:text-base">{beneficio.description}</p>
                 </div>
               </RevealSection>
             ))}
@@ -71,15 +71,15 @@ const Carreiras = () => {
       </section>    
 
       {/* Formulário de Candidatura Espontânea */}
-      <section className="py-20">
-        <div className="max-w-[1280px] mx-auto px-4 md:px-10">
+      <section className="py-12 sm:py-16 md:py-20">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10">
           <div className="max-w-2xl mx-auto">
             <RevealSection>
-              <h2 className="text-3xl md:text-4xl text-center mb-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl text-center mb-3 sm:mb-4 px-2">
                 <span className="font-jamjuree font-700 text-white mx-1">Candidatura</span>
                 <span className="font-jakarta font-800 text-[#29C8EB] mx-1">Espontânea</span>
               </h2>
-              <p className="text-center text-muted-foreground mb-8">
+              <p className="text-center text-muted-foreground text-sm sm:text-base mb-6 sm:mb-8 px-4">
                 Não encontrou a vaga ideal? Envie seu currículo e entraremos em contato quando surgir uma oportunidade
               </p>
             </RevealSection>
