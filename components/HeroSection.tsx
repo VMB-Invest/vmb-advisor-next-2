@@ -15,8 +15,7 @@ export default function HeroSection() {
         >
           <source src="https://pub-db48207f42de49e7b9575db65c6f484f.r2.dev/INSTITUCIONAL.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-black/75" />
-        <div className="absolute bottom-0 left-0 right-0 h-4 bg-gradient-to-t from-background via-background/50 to-transparent backdrop-blur-md" />
+        <div className="absolute inset-0 bg-black/75" />          
       </div>
       <div className="w-full relative z-10 max-w-[1280px] mx-auto px-4 md:px-10 py-20">
         <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 items-center min-h-[400px]">

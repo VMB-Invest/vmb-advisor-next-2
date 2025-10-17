@@ -72,7 +72,7 @@ export default function Home() {
       <HeroSection />
       
       {/* Números que falam por si */}
-      <section className="relative pt-20 bg-background">
+      <section className="relative pt-20 pb-20 bg-background">
         {/* Botões de Ação */}
         <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 z-20">
           <RevealSection>
@@ -87,37 +87,45 @@ export default function Home() {
           </RevealSection>
         </div>
         <div className="max-w-[1280px] mx-auto px-4 md:px-10 pt-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            {/* Grid de números */}
             <RevealSection>
-              <div className="grid grid-cols-3 grid-rows-3 gap-4 h-[600px]">
-                <div className="bg-[#29C8EB] rounded-xl p-6 col-span-1 row-span-2 flex flex-col justify-between border">
-                  <div className="text-background text-xs font-semibold uppercase tracking-wide mb-2">SOB CUSTÓDIA</div>
-                  <div className="text-4xl md:text-5xl font-bold text-background">750M +</div>
-                </div>            
-                
-                <div className="bg-background border-2 border-white rounded-xl p-6 col-span-1 row-span-2 flex flex-col justify-between">
-                  <div className="text-gray-300 text-xs font-semibold uppercase tracking-wide mb-2">COLABORADORES</div>
-                  <div className="text-4xl md:text-5xl font-bold text-white">+121</div>
+              <div className="grid grid-cols-1 gap-6">
+                {/* Barra no topo - SOB CUSTÓDIA */}
+                <div className="bg-gradient-to-r from-[#29C8EB] to-[#29C8EB]/80 rounded-3xl p-8 border border-[#29C8EB]/30 col-span-1">
+                  <div className="text-white text-sm font-semibold uppercase tracking-wide mb-2">SOB CUSTÓDIA</div>
+                  <div className="text-5xl font-bold text-white">750M +</div>
                 </div>
                 
-                <div className="bg-background border-2 border-white rounded-xl p-6 col-span-1 row-span-1 flex flex-col justify-between">
-                  <div className="text-gray-300 text-xs font-semibold uppercase tracking-wide mb-2">NPS</div>
-                  <div className="text-3xl md:text-4xl font-bold text-white">94.4</div>
-                </div>
-                
-                <div className="bg-background border-2 border-white rounded-xl p-6 col-span-1 row-span-1 flex flex-col justify-between">
-                  <div className="text-gray-300 text-xs font-semibold uppercase tracking-wide mb-2">CLIENTES</div>
-                  <div className="text-3xl md:text-4xl font-bold text-white">3700+</div>
+                {/* Três boxes abaixo */}
+                <div className="grid grid-cols-12 gap-6">
+                  <div className="bg-background border-2 border-white rounded-2xl p-6 flex flex-col justify-center items-center text-center h-64 col-span-3">
+                    <div className="text-gray-300 text-xs font-semibold uppercase tracking-wide mb-4">NPS</div>
+                    <div className="text-4xl font-bold text-[#29C8EB]">94.4</div>
+                  </div>
+                  
+                  <div className="bg-background border-2 border-white rounded-2xl p-6 flex flex-col justify-center items-center text-center h-64 col-span-6">
+                    <div className="text-gray-300 text-xs font-semibold uppercase tracking-wide mb-4">CLIENTES</div>
+                    <div className="text-5xl font-bold text-[#29C8EB]">3700+</div>
+                  </div>
+                  
+                  <div className="bg-background border-2 border-white rounded-2xl p-6 flex flex-col justify-center items-center text-center h-64 col-span-3">
+                    <div className="text-gray-300 text-xs font-semibold uppercase tracking-wide mb-4">COLABORADORES</div>
+                    <div className="text-4xl font-bold text-[#29C8EB]">+121</div>
+                  </div>
                 </div>
               </div>
             </RevealSection>
 
+            {/* Conteúdo - Título e descrições */}
             <RevealSection delay={0.2}>
-              <h2 className="text-3xl md:text-4xl mb-6 font-jamjuree font-700">
-                <span className="text-white">Nossos</span> <span className="text-modern">Números</span> <span className="text-white">falam por si</span>
-              </h2>
-              <p className="text-muted-foreground mb-4">Nossa trajetória de sucesso é refletida nos números que conquistamos.</p>
-              <p className="text-muted-foreground">Estamos comprometidos em manter a excelência.</p>
+              <div className="flex flex-col justify-start">
+                <h2 className="text-4xl md:text-5xl mb-8 font-jamjuree font-700">
+                  <span className="text-white">Nossos</span> <span className="text-[#29C8EB]">Números</span> <span className="text-white">falam por si</span>
+                </h2>
+                <p className="text-gray-300 text-lg leading-relaxed mb-6">Nossa trajetória de sucesso é refletida nos números que conquistamos.</p>
+                <p className="text-gray-300 text-lg leading-relaxed">Estamos comprometidos em manter a excelência em cada interação e resultado entregue aos nossos clientes.</p>
+              </div>
             </RevealSection>
           </div>
         </div>
