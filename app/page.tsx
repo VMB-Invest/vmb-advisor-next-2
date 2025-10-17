@@ -77,10 +77,10 @@ export default function Home() {
         <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 z-20">
           <RevealSection>
             <div className="hidden sm:flex flex-col sm:flex-row justify-center items-center gap-6">
-              <a href="https://api.whatsapp.com/send/?phone=5521972674227&text=Ol%C3%A1%21+Gostaria+de+me+tornar+cliente+da+VMB+Advisor" target="_blank" rel="noopener noreferrer">
+              <a href="https://api.whatsapp.com/send/?phone=5521972674227&text=Ol%C3%A1%2C+tenho+interesse+em+me+planejar+financeiramente." target="_blank" rel="noopener noreferrer">
                 <Button className="w-64 bg-white hover:underline text-black font-semibold px-8 py-4 text-sm uppercase tracking-wide shadow-lg cursor-pointer">SEJA CLIENTE</Button>
               </a>            
-              <a href="https://api.whatsapp.com/send/?phone=5521972674227&text=Ol%C3%A1%21+Tenho+interesse" target="_blank" rel="noopener noreferrer">
+              <a href="https://api.whatsapp.com/send/?phone=5521972674227&text=Ol%C3%A1%21+Gostaria+de+entrar+em+contato+com+um+especialista+em+Financial+Advisor." target="_blank" rel="noopener noreferrer">
                 <Button className="w-64 bg-[#29C8EB] hover:underline text-white font-semibold px-8 py-4 text-sm uppercase tracking-wide shadow-lg cursor-pointer">Planner financeiro</Button>
               </a>
             </div>
