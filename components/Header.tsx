@@ -33,7 +33,7 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden text-white p-2"
+            className="md:hidden text-white p-2 cursor-pointer"
             aria-label="Toggle menu"
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -61,7 +61,7 @@ const Header = () => {
                 </Link>
               ))}
               <a href="https://api.whatsapp.com/send/?phone=5521972674227&text=Ol%C3%A1%21+Gostaria+de+iniciar+uma+assessoria+de+investimentos+com+a+VMB+Advisor.&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
-                <Button className="bg-[#29C8EB] hover:bg-[#29C8EB]/90 text-white font-medium px-6 py-2 text-sm">
+                <Button className="bg-[#29C8EB] hover:bg-[#29C8EB]/90 text-white font-medium px-6 py-2 text-sm cursor-pointer">
                   Iniciar Assessoria
                 </Button>
               </a>
@@ -94,19 +94,19 @@ const Header = () => {
                 ))}
                 <div className="pt-4 space-y-3">
                   <a href="https://api.whatsapp.com/send/?phone=5521972674227&text=Ol%C3%A1%21+Gostaria+de+iniciar+uma+assessoria+de+investimentos+com+a+VMB+Advisor.&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" onClick={() => setIsMenuOpen(false)}>
-                    <Button className="bg-[#29C8EB] hover:bg-[#29C8EB]/90 text-black font-medium w-full">
+                    <Button className="bg-[#29C8EB] hover:bg-[#29C8EB]/90 text-black font-medium w-full cursor-pointer">
                       Iniciar Assessoria
                     </Button>
                   </a>
                   
                   <div className="border-t border-white/20 pt-3 space-y-3">
                     <a href="https://api.whatsapp.com/send/?phone=5521972674227&text=Ol%C3%A1%21+Gostaria+de+me+tornar+cliente+da+VMB+Advisor+e+iniciar+meu+planejamento+financeiro.+Podem+me+ajudar%3F&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" onClick={() => setIsMenuOpen(false)}>
-                      <Button size="sm" className="bg-white mb-4 hover:bg-gray-100 text-black font-semibold w-full text-xs uppercase tracking-wide">
+                      <Button size="sm" className="bg-white mb-4 hover:bg-gray-100 text-black font-semibold w-full text-xs uppercase tracking-wide cursor-pointer">
                         SEJA CLIENTE
                       </Button>
                     </a>                   
                     <a href="https://api.whatsapp.com/send/?phone=5521972674227&text=Ol%C3%A1%21+Tenho+interesse+em+abrir+um+escrit%C3%B3rio+da+VMB+Advisor+na+minha+regi%C3%A3o.+Podem+me+dar+mais+informa%C3%A7%C3%B5es+sobre+o+processo%3F&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" onClick={() => setIsMenuOpen(false)}>
-                      <Button size="sm" className="bg-[#29C8EB] hover:bg-[#29C8EB]/90 text-white font-semibold w-full text-xs uppercase tracking-wide">
+                      <Button size="sm" className="bg-[#29C8EB] hover:bg-[#29C8EB]/90 text-white font-semibold w-full text-xs uppercase tracking-wide cursor-pointer">
                         Planner financeiro
                       </Button>
                     </a>

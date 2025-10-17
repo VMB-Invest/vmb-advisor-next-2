@@ -120,7 +120,7 @@ export default function ContactForm({ onSubmitSuccess }: ContactFormProps) {
         <Button
           type="submit"
           disabled={isLoading}
-          className="w-full bg-[#29C8EB] hover:bg-[#29C8EB]/90 text-background font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-full bg-[#29C8EB] hover:bg-[#29C8EB]/90 text-background font-semibold disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
         >
           {isLoading ? "Enviando..." : "Enviar Mensagem"}
         </Button>

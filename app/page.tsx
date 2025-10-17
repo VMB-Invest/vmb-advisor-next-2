@@ -78,10 +78,10 @@ export default function Home() {
           <RevealSection>
             <div className="hidden sm:flex flex-col sm:flex-row justify-center items-center gap-6">
               <a href="https://api.whatsapp.com/send/?phone=5521972674227&text=Ol%C3%A1%21+Gostaria+de+me+tornar+cliente+da+VMB+Advisor" target="_blank" rel="noopener noreferrer">
-                <Button className="w-64 bg-white hover:underline text-black font-semibold px-8 py-4 text-sm uppercase tracking-wide shadow-lg">SEJA CLIENTE</Button>
+                <Button className="w-64 bg-white hover:underline text-black font-semibold px-8 py-4 text-sm uppercase tracking-wide shadow-lg cursor-pointer">SEJA CLIENTE</Button>
               </a>            
               <a href="https://api.whatsapp.com/send/?phone=5521972674227&text=Ol%C3%A1%21+Tenho+interesse" target="_blank" rel="noopener noreferrer">
-                <Button className="w-64 bg-[#29C8EB] hover:underline text-white font-semibold px-8 py-4 text-sm uppercase tracking-wide shadow-lg">Planner financeiro</Button>
+                <Button className="w-64 bg-[#29C8EB] hover:underline text-white font-semibold px-8 py-4 text-sm uppercase tracking-wide shadow-lg cursor-pointer">Planner financeiro</Button>
               </a>
             </div>
           </RevealSection>
@@ -193,7 +193,7 @@ export default function Home() {
               <p className="text-muted-foreground mb-4">Somos uma consultoria especializada em soluções financeiras estratégicas.</p>
               <p className="text-muted-foreground mb-6">Com anos de experiência no mercado, nossa equipe oferece atendimento personalizado.</p>
               <a href="https://api.whatsapp.com/send/?phone=5521972674227" target="_blank" rel="noopener noreferrer">
-                <Button className="border-[#29C8EB] text-white hover:underline">Saiba Mais <ArrowRight className="ml-2 w-4 h-4" /></Button>
+                <Button className="border-[#29C8EB] text-white hover:underline cursor-pointer">Saiba Mais <ArrowRight className="ml-2 w-4 h-4" /></Button>
               </a>
             </RevealSection>
           </div>
@@ -213,7 +213,7 @@ export default function Home() {
             </h2>
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">Entre em contato conosco e descubra como podemos ajudar você</p>
             <a href="https://api.whatsapp.com/send/?phone=5521972674227" target="_blank" rel="noopener noreferrer">
-              <Button className="bg-[#29C8EB] hover:bg-[#29C8EB]/90 text-background font-semibold">Fale com um Especialista <ArrowRight className="ml-2 w-5 h-5" /></Button>
+              <Button className="bg-[#29C8EB] hover:bg-[#29C8EB]/90 text-background font-semibold cursor-pointer">Fale com um Especialista <ArrowRight className="ml-2 w-5 h-5" /></Button>
             </a>
           </RevealSection>
         </div>
