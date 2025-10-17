@@ -16,7 +16,7 @@ export default function CarreirasHero({ title, subtitle }: CarreirasHeroProps) {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-4xl md:text-6xl font-bold mb-6 text-white"
+          className="text-4xl md:text-6xl font-jakarta font-800 mb-6 text-white"
         >
           {title} <span className="text-primary">Conosco</span>
         </motion.h1>

@@ -11,7 +11,7 @@
   --popover: 0 0% 8.6%;
   --popover-foreground: 0 0% 100%;
 
-  --primary: 191 83% 54%;
+  --primary: 190 78% 57%;
   --primary-foreground: 0 0% 8.6%;
 
   --secondary: 0 0% 16.5%;
@@ -20,7 +20,7 @@
   --muted: 0 0% 16.5%;
   --muted-foreground: 0 0% 60.8%;
 
-  --accent: 191 83% 54%;
+  --accent: 190 78% 57%;
   --accent-foreground: 0 0% 8.6%;
 
   --destructive: 0 84.2% 60.2%;
@@ -28,15 +28,15 @@
 
   --border: 0 0% 22%;
   --input: 0 0% 16.5%;
-  --ring: 191 83% 54%;
+  --ring: 190 78% 57%;
 
   --radius: 0.5rem;
 
-  --chart-1: 191 83% 54%;
-  --chart-2: 191 70% 45%;
-  --chart-3: 191 60% 35%;
-  --chart-4: 191 50% 25%;
-  --chart-5: 191 40% 20%;
+  --chart-1: 190 78% 57%;
+  --chart-2: 190 65% 50%;
+  --chart-3: 190 50% 40%;
+  --chart-4: 190 40% 30%;
+  --chart-5: 190 30% 20%;
 }
 
 /* Base Styles */
@@ -51,7 +51,21 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-bai-jamjuree), sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+/* Variações de títulos */
+h1 {
+  font-family: var(--font-plus-jakarta-sans), sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-family: var(--font-bai-jamjuree), sans-serif;
+  font-weight: 700;
 }
 
 * {

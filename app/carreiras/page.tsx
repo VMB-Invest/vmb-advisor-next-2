@@ -44,7 +44,7 @@ const Carreiras = () => {
       <section className="py-20">
         <div className="max-w-[1280px] mx-auto px-4 md:px-10">
           <RevealSection>
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+            <h2 className="text-3xl md:text-4xl font-jamjuree font-700 text-center mb-4">
               Por que trabalhar na VMB Advisor?
             </h2>
             <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
@@ -57,7 +57,7 @@ const Carreiras = () => {
               <RevealSection key={index} delay={index * 0.1}>
                 <div className="bg-card border border-border rounded-lg p-6 hover:border-primary transition-all duration-300 text-center h-full">
                   <beneficio.icon className="w-12 h-12 text-primary mx-auto mb-4" />
-                  <h3 className="text-xl font-semibold mb-3">{beneficio.title}</h3>
+                  <h3 className="text-xl font-jamjuree font-600 mb-3">{beneficio.title}</h3>
                   <p className="text-muted-foreground">{beneficio.description}</p>
                 </div>
               </RevealSection>
@@ -71,7 +71,7 @@ const Carreiras = () => {
         <div className="max-w-[1280px] mx-auto px-4 md:px-10">
           <div className="max-w-2xl mx-auto">
             <RevealSection>
-              <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+              <h2 className="text-3xl md:text-4xl font-jamjuree font-700 text-center mb-4">
                 Candidatura Espontânea
               </h2>
               <p className="text-center text-muted-foreground mb-8">

@@ -34,7 +34,7 @@ export default function Equipe() {
       <section className="relative min-h-[400px] flex items-center justify-center overflow-hidden bg-gradient-to-b from-black to-background">
         <div className="absolute inset-0 bg-[url('/api/placeholder/1920/600')] bg-cover bg-center opacity-20" />
         <div className="relative z-10 max-w-[1280px] mx-auto px-4 md:px-10 py-20 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
+          <h1 className="text-4xl md:text-6xl font-jakarta font-800 mb-6 text-white">
             Nossa <span className="text-primary">Equipe</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
@@ -60,7 +60,7 @@ export default function Equipe() {
                     />
                   </div>
                   <div className="p-6 flex-1 flex flex-col">
-                    <h3 className="text-xl font-semibold mb-1">{membro.nome}</h3>
+                    <h3 className="text-xl font-jamjuree font-600 mb-1">{membro.nome}</h3>
                     <p className="text-primary text-sm mb-3">{membro.cargo}</p>
                     <p className="text-muted-foreground text-sm mb-4 flex-1">{membro.descricao}</p>
                     <div className="flex gap-3 mt-auto">
@@ -92,7 +92,7 @@ export default function Equipe() {
         <div className="max-w-[1280px] mx-auto px-4 md:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <RevealSection>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Nossa Cultura</h2>
+              <h2 className="text-3xl md:text-4xl font-jamjuree font-700 mb-6">Nossa Cultura</h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
                   Na VMB Advisor, cultivamos um ambiente de colaboração, inovação e crescimento contínuo. 

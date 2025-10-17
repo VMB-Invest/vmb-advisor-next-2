@@ -19,7 +19,7 @@ const Localizacao = () => {
 
             {/* Informações de Contato */}
             <RevealSection delay={0.2}>
-              <h2 className="text-3xl font-bold mb-8">
+              <h2 className="text-3xl font-jamjuree font-700 mb-8">
                 Informações de Contato
               </h2>
 
@@ -29,7 +29,7 @@ const Localizacao = () => {
                     <Phone className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-1">Telefone</h3>
+                    <h3 className="font-jamjuree font-600 text-lg mb-1">Telefone</h3>
                     <a href="tel:+5521351324" className="text-muted-foreground hover:text-primary transition-colors">
                       (21) 3513-2404
                     </a>
@@ -41,7 +41,7 @@ const Localizacao = () => {
                     <MapPin className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-2">Localização</h3>
+                    <h3 className="font-jamjuree font-600 text-lg mb-2">Localização</h3>
                     <p className="text-foreground font-semibold mb-1">Plaza Shopping</p>
                     <div className="text-muted-foreground text-sm space-y-1">
                       <p>Plaza Corporate Offices</p>

@@ -113,8 +113,8 @@ export default function Home() {
             </RevealSection>
 
             <RevealSection delay={0.2}>
-              <h2 className="text-3xl md:text-4xl mb-6">
-                <span className="font-heading font-semibold text-white">Nossos</span> <span className="text-modern">Números</span> <span className="font-heading font-semibold text-white">falam por si</span>
+              <h2 className="text-3xl md:text-4xl mb-6 font-jamjuree font-700">
+                <span className="text-white">Nossos</span> <span className="text-modern">Números</span> <span className="text-white">falam por si</span>
               </h2>
               <p className="text-muted-foreground mb-4">Nossa trajetória de sucesso é refletida nos números que conquistamos.</p>
               <p className="text-muted-foreground">Estamos comprometidos em manter a excelência.</p>
@@ -127,7 +127,7 @@ export default function Home() {
       <section className="bg-background">
         <div className="max-w-[1280px] mx-auto px-4 md:px-10">
           <RevealSection>
-            <h2 className="text-3xl md:text-4xl text-center mb-4"><span className="text-impact">Nossos</span> <span className="font-heading font-semibold text-white">Serviços</span></h2>
+            <h2 className="text-3xl md:text-4xl text-center mb-4 font-jamjuree font-700"><span className="text-impact">Nossos</span> <span className="text-white">Serviços</span></h2>
             <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">Oferecemos soluções completas para gestão e crescimento do seu patrimônio</p>
           </RevealSection>
 
@@ -136,7 +136,7 @@ export default function Home() {
               <RevealSection key={index} delay={index * 0.1}>
                 <div className="bg-card border border-border rounded-lg p-6 hover:border-primary transition-all duration-300 h-full">
                   <service.icon className="w-12 h-12 text-primary mb-4" />
-                  <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
+                  <h3 className="text-xl font-jamjuree font-600 mb-3">{service.title}</h3>
                   <p className="text-muted-foreground">{service.description}</p>
                 </div>
               </RevealSection>
@@ -153,8 +153,8 @@ export default function Home() {
         <div className="max-w-[1280px] mx-auto px-4 md:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
             <RevealSection>
-              <h2 className="text-3xl md:text-4xl text-gray-900 mb-6">
-                <span className="font-heading font-bold">Construa seu</span> <span className="font-accent font-black text-primary">legado</span>
+              <h2 className="text-3xl md:text-4xl text-gray-900 mb-6 font-jamjuree font-700">
+                <span className="text-gray-900">Construa seu</span> <span className="text-primary">legado</span>
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed">Nosso propósito é fazer parte de todas as grandes conquistas da vida das pessoas.</p>
             </RevealSection>
@@ -179,7 +179,7 @@ export default function Home() {
             </RevealSection>
 
             <RevealSection delay={0.2}>
-              <h2 className="text-3xl md:text-4xl mb-6"><span className="font-display font-semibold text-white">Sobre a</span> <span className="text-emphasis">VMB Advisor</span></h2>
+              <h2 className="text-3xl md:text-4xl mb-6 font-jamjuree font-700"><span className="text-white">Sobre a</span> <span className="text-emphasis">VMB Advisor</span></h2>
               <p className="text-muted-foreground mb-4">Somos uma consultoria especializada em soluções financeiras estratégicas.</p>
               <p className="text-muted-foreground mb-6">Com anos de experiência no mercado, nossa equipe oferece atendimento personalizado.</p>
               <a href="https://api.whatsapp.com/send/?phone=5521972674227" target="_blank" rel="noopener noreferrer">
@@ -194,7 +194,7 @@ export default function Home() {
       <section className="py-20 bg-gradient-to-b from-background to-black">
         <div className="max-w-[1280px] mx-auto px-4 md:px-10 text-center">
           <RevealSection>
-            <h2 className="text-3xl md:text-4xl mb-6"><span className="font-heading font-semibold text-white">Pronto para</span> <span className="text-impact">transformar</span> <span className="font-heading font-semibold text-white">seu patrimônio?</span></h2>
+            <h2 className="text-3xl md:text-4xl mb-6 font-jamjuree font-700"><span className="text-white">Pronto para</span> <span className="text-impact">transformar</span> <span className="text-white">seu patrimônio?</span></h2>
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">Entre em contato conosco e descubra como podemos ajudar você</p>
             <a href="https://api.whatsapp.com/send/?phone=5521972674227" target="_blank" rel="noopener noreferrer">
               <Button className="bg-primary hover:bg-primary/90 text-background font-semibold">Fale com um Especialista <ArrowRight className="ml-2 w-5 h-5" /></Button>

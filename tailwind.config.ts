@@ -52,10 +52,12 @@ const config: Config = {
       },
       fontFamily: {
         sans: ['"Roboto Flex"', 'system-ui', 'sans-serif'],
-        display: ['"Inter"', 'system-ui', 'sans-serif'],
-        heading: ['"Inter"', 'system-ui', 'sans-serif'],
+        display: ['var(--font-plus-jakarta-sans)', 'system-ui', 'sans-serif'],
+        heading: ['var(--font-bai-jamjuree)', 'system-ui', 'sans-serif'],
         accent: ['"Space Grotesk"', 'system-ui', 'sans-serif'],
         roboto: ['"Roboto Flex"', 'system-ui', 'sans-serif'],
+        'jakarta': ['var(--font-plus-jakarta-sans)', 'system-ui', 'sans-serif'],
+        'jamjuree': ['var(--font-bai-jamjuree)', 'system-ui', 'sans-serif'],
       },
       borderRadius: {
         lg: 'var(--radius)',

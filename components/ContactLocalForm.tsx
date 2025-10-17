@@ -59,7 +59,7 @@ export default function ContactLocalForm({ onSubmit }: ContactLocalFormProps) {
 
   return (
     <RevealSection>
-      <h1 className="text-4xl md:text-5xl font-bold mb-6">
+      <h1 className="text-4xl md:text-5xl font-jakarta font-800 mb-6">
         Entre em <span className="text-primary">Contato</span>
       </h1>
       <p className="text-muted-foreground mb-8">

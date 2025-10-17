@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Contato */}
           <div>
-            <h3 className="text-primary font-semibold text-lg mb-4">Contato</h3>
+            <h3 className="text-primary font-jamjuree font-600 text-lg mb-4">Contato</h3>
             <div className="space-y-3 text-sm text-gray-400">
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
@@ -31,7 +31,7 @@ const Footer = () => {
 
           {/* Links Rápidos */}
           <div>
-            <h3 className="text-primary font-semibold text-lg mb-4">Links Rápidos</h3>
+            <h3 className="text-primary font-jamjuree font-600 text-lg mb-4">Links Rápidos</h3>
             <div className="space-y-2 text-sm text-gray-400">
               <Link href="/" className="block hover:text-primary transition-colors">Home</Link>
               <Link href="/sobre" className="block hover:text-primary transition-colors">Sobre Nós</Link>
@@ -43,7 +43,7 @@ const Footer = () => {
 
           {/* Horário de Atendimento */}
           <div>
-            <h3 className="text-primary font-semibold text-lg mb-4">Horário de Atendimento</h3>
+            <h3 className="text-primary font-jamjuree font-600 text-lg mb-4">Horário de Atendimento</h3>
             <div className="space-y-2 text-sm text-gray-400">
               <p>Segunda a Sexta</p>
               <p className="text-white">09:00 - 18:00</p>

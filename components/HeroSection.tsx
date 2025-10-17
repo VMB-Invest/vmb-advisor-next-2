@@ -26,13 +26,13 @@ export default function HeroSection() {
             transition={{ duration: 0.8 }}
             className="text-left"
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl mb-6 drop-shadow-2xl">
-              <span className="font-display font-light text-white">Construindo o</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl mb-6 drop-shadow-2xl font-jakarta">
+              <span className="font-jamjuree font-light text-white">Construindo o</span>
               <br />
-              <span className="text-emphasis">FUTURO FINANCEIRO</span>
+              <span className="text-emphasis font-jakarta font-800">FUTURO FINANCEIRO</span>
               <br />
-              <span className="font-display font-light text-white">que </span>
-              <span className="text-highlight">você merece</span>
+              <span className="font-jamjuree font-light text-white">que </span>
+              <span className="text-highlight font-jakarta font-800">você merece</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-8 drop-shadow-lg">
               Na VMB Advisor, transformamos seus sonhos em realidade através de um planejamento financeiro sólido e 
