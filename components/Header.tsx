@@ -46,22 +46,22 @@ const Header = () => {
                 <Link
                   key={item.path}
                   href={item.path}
-                  className={`hover:text-primary transition-colors font-light relative ${
-                    isActive(item.path) ? "text-primary font-medium" : ""
+                  className={`hover:text-[#29C8EB] transition-colors font-light relative ${
+                    isActive(item.path) ? "text-[#29C8EB] font-medium" : ""
                   }`}
                 >
                   {item.name}
                   {isActive(item.path) && (
                     <motion.div
                       layoutId="activeTab"
-                      className="absolute -bottom-4 left-0 right-0 h-0.5 bg-primary"
+                      className="absolute -bottom-4 left-0 right-0 h-0.5 bg-[#29C8EB]"
                       transition={{ type: "spring", stiffness: 380, damping: 30 }}
                     />
                   )}
                 </Link>
               ))}
               <a href="https://api.whatsapp.com/send/?phone=5521972674227&text=Ol%C3%A1%21+Gostaria+de+iniciar+uma+assessoria+de+investimentos+com+a+VMB+Advisor.&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
-                <Button className="bg-primary hover:bg-primary/90 text-white font-medium px-6 py-2 text-sm">
+                <Button className="bg-[#29C8EB] hover:bg-[#29C8EB]/90 text-white font-medium px-6 py-2 text-sm">
                   Iniciar Assessoria
                 </Button>
               </a>
@@ -85,8 +85,8 @@ const Header = () => {
                     key={item.path}
                     href={item.path}
                     onClick={() => setIsMenuOpen(false)}
-                    className={`hover:text-primary text-white transition-colors font-light py-2 ${
-                      isActive(item.path) ? "text-primary font-medium" : ""
+                    className={`hover:text-[#29C8EB] text-white transition-colors font-light py-2 ${
+                      isActive(item.path) ? "text-[#29C8EB] font-medium" : ""
                     }`}
                   >
                     {item.name}
@@ -94,7 +94,7 @@ const Header = () => {
                 ))}
                 <div className="pt-4 space-y-3">
                   <a href="https://api.whatsapp.com/send/?phone=5521972674227&text=Ol%C3%A1%21+Gostaria+de+iniciar+uma+assessoria+de+investimentos+com+a+VMB+Advisor.&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" onClick={() => setIsMenuOpen(false)}>
-                    <Button className="bg-primary hover:bg-primary/90 text-black font-medium w-full">
+                    <Button className="bg-[#29C8EB] hover:bg-[#29C8EB]/90 text-black font-medium w-full">
                       Iniciar Assessoria
                     </Button>
                   </a>
@@ -106,7 +106,7 @@ const Header = () => {
                       </Button>
                     </a>                   
                     <a href="https://api.whatsapp.com/send/?phone=5521972674227&text=Ol%C3%A1%21+Tenho+interesse+em+abrir+um+escrit%C3%B3rio+da+VMB+Advisor+na+minha+regi%C3%A3o.+Podem+me+dar+mais+informa%C3%A7%C3%B5es+sobre+o+processo%3F&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" onClick={() => setIsMenuOpen(false)}>
-                      <Button size="sm" className="bg-primary hover:bg-primary/90 text-white font-semibold w-full text-xs uppercase tracking-wide">
+                      <Button size="sm" className="bg-[#29C8EB] hover:bg-[#29C8EB]/90 text-white font-semibold w-full text-xs uppercase tracking-wide">
                         Planner financeiro
                       </Button>
                     </a>

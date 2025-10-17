@@ -60,7 +60,7 @@ export default function ContactLocalForm({ onSubmit }: ContactLocalFormProps) {
   return (
     <RevealSection>
       <h1 className="text-4xl md:text-5xl font-jakarta font-800 mb-6">
-        Entre em <span className="text-primary">Contato</span>
+        Entre em <span className="text-[#29C8EB]">Contato</span>
       </h1>
       <p className="text-muted-foreground mb-8">
         Estamos aqui para ajudar você a planejar seu futuro financeiro. Entre em contato conosco para discutir suas necessidades de investimento.
@@ -130,7 +130,7 @@ export default function ContactLocalForm({ onSubmit }: ContactLocalFormProps) {
         <Button
           type="submit"
           disabled={isLoading}
-          className="w-full bg-primary hover:bg-primary/90 text-background font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-full bg-[#29C8EB] hover:bg-[#29C8EB]/90 text-background font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {isLoading ? 'Enviando...' : 'Enviar Mensagem'}
         </Button>

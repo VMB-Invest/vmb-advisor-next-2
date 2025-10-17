@@ -81,7 +81,7 @@ export default function Home() {
                 <Button className="w-64 bg-white hover:underline text-black font-semibold px-8 py-4 text-sm uppercase tracking-wide shadow-lg">SEJA CLIENTE</Button>
               </a>            
               <a href="https://api.whatsapp.com/send/?phone=5521972674227&text=Ol%C3%A1%21+Tenho+interesse" target="_blank" rel="noopener noreferrer">
-                <Button className="w-64 bg-primary hover:underline text-white font-semibold px-8 py-4 text-sm uppercase tracking-wide shadow-lg">Planner financeiro</Button>
+                <Button className="w-64 bg-[#29C8EB] hover:underline text-white font-semibold px-8 py-4 text-sm uppercase tracking-wide shadow-lg">Planner financeiro</Button>
               </a>
             </div>
           </RevealSection>
@@ -90,7 +90,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <RevealSection>
               <div className="grid grid-cols-3 grid-rows-3 gap-4 h-[600px]">
-                <div className="bg-primary rounded-xl p-6 col-span-1 row-span-2 flex flex-col justify-between border">
+                <div className="bg-[#29C8EB] rounded-xl p-6 col-span-1 row-span-2 flex flex-col justify-between border">
                   <div className="text-background text-xs font-semibold uppercase tracking-wide mb-2">SOB CUSTÓDIA</div>
                   <div className="text-4xl md:text-5xl font-bold text-background">750M +</div>
                 </div>            
@@ -127,15 +127,18 @@ export default function Home() {
       <section className="bg-background">
         <div className="max-w-[1280px] mx-auto px-4 md:px-10">
           <RevealSection>
-            <h2 className="text-3xl md:text-4xl text-center mb-4 font-jamjuree font-700"><span className="text-impact">Nossos</span> <span className="text-white">Serviços</span></h2>
+            <h2 className="text-3xl md:text-4xl text-center mb-4">
+              <span className="font-jamjuree font-700 text-[#29C8EB] mx-1">Nossos</span>
+              <span className="font-jakarta font-800 text-white mx-1">Serviços</span>
+            </h2>
             <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">Oferecemos soluções completas para gestão e crescimento do seu patrimônio</p>
           </RevealSection>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {services.map((service, index) => (
               <RevealSection key={index} delay={index * 0.1}>
-                <div className="bg-card border border-border rounded-lg p-6 hover:border-primary transition-all duration-300 h-full">
-                  <service.icon className="w-12 h-12 text-primary mb-4" />
+                <div className="bg-card border border-border rounded-lg p-6 hover:border-[#29C8EB] transition-all duration-300 h-full">
+                  <service.icon className="w-12 h-12 text-[#29C8EB] mb-4" />
                   <h3 className="text-xl font-jamjuree font-600 mb-3">{service.title}</h3>
                   <p className="text-muted-foreground">{service.description}</p>
                 </div>
@@ -153,8 +156,10 @@ export default function Home() {
         <div className="max-w-[1280px] mx-auto px-4 md:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
             <RevealSection>
-              <h2 className="text-3xl md:text-4xl text-gray-900 mb-6 font-jamjuree font-700">
-                <span className="text-gray-900">Construa seu</span> <span className="text-primary">legado</span>
+              <h2 className="text-3xl md:text-4xl mb-6">
+                <span className="font-jamjuree font-700 text-gray-900 mx-1">Construa</span>
+                <span className="font-poppins font-600 text-[#29C8EB] mx-1">seu</span>
+                <span className="font-caveat font-bold text-gray-900 mx-1">legado</span>
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed">Nosso propósito é fazer parte de todas as grandes conquistas da vida das pessoas.</p>
             </RevealSection>
@@ -179,11 +184,16 @@ export default function Home() {
             </RevealSection>
 
             <RevealSection delay={0.2}>
-              <h2 className="text-3xl md:text-4xl mb-6 font-jamjuree font-700"><span className="text-white">Sobre a</span> <span className="text-emphasis">VMB Advisor</span></h2>
+              <h2 className="text-3xl md:text-4xl mb-6">
+                <span className="font-jamjuree font-700 text-white mx-1">Sobre</span>
+                <span className="font-jakarta font-800 text-[#29C8EB] mx-1">a</span>
+                <span className="font-poppins font-600 text-white mx-1">VMB</span>
+                <span className="font-caveat font-bold text-[#29C8EB] mx-1">Advisor</span>
+              </h2>
               <p className="text-muted-foreground mb-4">Somos uma consultoria especializada em soluções financeiras estratégicas.</p>
               <p className="text-muted-foreground mb-6">Com anos de experiência no mercado, nossa equipe oferece atendimento personalizado.</p>
               <a href="https://api.whatsapp.com/send/?phone=5521972674227" target="_blank" rel="noopener noreferrer">
-                <Button className="border-primary text-primary hover:bg-primary hover:text-background">Saiba Mais <ArrowRight className="ml-2 w-4 h-4" /></Button>
+                <Button className="border-[#29C8EB] text-white hover:underline">Saiba Mais <ArrowRight className="ml-2 w-4 h-4" /></Button>
               </a>
             </RevealSection>
           </div>
@@ -194,10 +204,16 @@ export default function Home() {
       <section className="py-20 bg-gradient-to-b from-background to-black">
         <div className="max-w-[1280px] mx-auto px-4 md:px-10 text-center">
           <RevealSection>
-            <h2 className="text-3xl md:text-4xl mb-6 font-jamjuree font-700"><span className="text-white">Pronto para</span> <span className="text-impact">transformar</span> <span className="text-white">seu patrimônio?</span></h2>
+            <h2 className="text-3xl md:text-4xl mb-6">
+              <span className="font-jamjuree font-700 text-white mx-1">Pronto</span>
+              <span className="font-jakarta font-800 text-[#29C8EB] mx-1">para</span>
+              <span className="font-poppins font-600 text-white mx-1">transformar</span>
+              <span className="font-caveat font-bold text-[#29C8EB] mx-1">seu</span>
+              <span className="font-jamjuree font-700 text-white mx-1">patrimônio?</span>
+            </h2>
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">Entre em contato conosco e descubra como podemos ajudar você</p>
             <a href="https://api.whatsapp.com/send/?phone=5521972674227" target="_blank" rel="noopener noreferrer">
-              <Button className="bg-primary hover:bg-primary/90 text-background font-semibold">Fale com um Especialista <ArrowRight className="ml-2 w-5 h-5" /></Button>
+              <Button className="bg-[#29C8EB] hover:bg-[#29C8EB]/90 text-background font-semibold">Fale com um Especialista <ArrowRight className="ml-2 w-5 h-5" /></Button>
             </a>
           </RevealSection>
         </div>

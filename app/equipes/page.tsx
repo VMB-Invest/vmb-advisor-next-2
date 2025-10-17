@@ -34,8 +34,9 @@ export default function Equipe() {
       <section className="relative min-h-[400px] flex items-center justify-center overflow-hidden bg-gradient-to-b from-black to-background">
         <div className="absolute inset-0 bg-[url('/api/placeholder/1920/600')] bg-cover bg-center opacity-20" />
         <div className="relative z-10 max-w-[1280px] mx-auto px-4 md:px-10 py-20 text-center">
-          <h1 className="text-4xl md:text-6xl font-jakarta font-800 mb-6 text-white">
-            Nossa <span className="text-primary">Equipe</span>
+          <h1 className="text-4xl md:text-6xl font-800 mb-6 text-white">
+            <span className="font-jamjuree font-700 text-white mx-2">Nossa</span>
+            <span className="font-jakarta font-800 text-[#29C8EB] mx-2">Equipe</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
             Profissionais altamente qualificados dedicados ao seu sucesso
@@ -49,7 +50,7 @@ export default function Equipe() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {equipe.map((membro, index) => (
               <RevealSection key={index} delay={index * 0.1}>
-                <div className="bg-card border border-border rounded-lg overflow-hidden hover:border-primary transition-all duration-300 group h-full flex flex-col">
+                <div className="bg-card border border-border rounded-lg overflow-hidden hover:border-[#29C8EB] transition-all duration-300 group h-full flex flex-col">
                   <div className="aspect-square bg-muted overflow-hidden">
                     <Image 
                       src={membro.foto} 
@@ -61,19 +62,19 @@ export default function Equipe() {
                   </div>
                   <div className="p-6 flex-1 flex flex-col">
                     <h3 className="text-xl font-jamjuree font-600 mb-1">{membro.nome}</h3>
-                    <p className="text-primary text-sm mb-3">{membro.cargo}</p>
+                    <p className="text-[#29C8EB] text-sm mb-3">{membro.cargo}</p>
                     <p className="text-muted-foreground text-sm mb-4 flex-1">{membro.descricao}</p>
                     <div className="flex gap-3 mt-auto">
                       <a
                         href="#"
-                        className="w-9 h-9 rounded-full bg-secondary flex items-center justify-center hover:bg-primary transition-colors"
+                        className="w-9 h-9 rounded-full bg-secondary flex items-center justify-center hover:bg-[#29C8EB] transition-colors"
                         aria-label="LinkedIn"
                       >
                         <Linkedin className="w-4 h-4" />
                       </a>
                       <a
                         href="#"
-                        className="w-9 h-9 rounded-full bg-secondary flex items-center justify-center hover:bg-primary transition-colors"
+                        className="w-9 h-9 rounded-full bg-secondary flex items-center justify-center hover:bg-[#29C8EB] transition-colors"
                         aria-label="Email"
                       >
                         <Mail className="w-4 h-4" />

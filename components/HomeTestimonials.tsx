@@ -22,8 +22,11 @@ export default function HomeTestimonials({ testimonials }: HomeTestimonialsProps
     <section className="py-20 bg-background">
       <div className="max-w-[1280px] mx-auto px-4 md:px-10">
         <RevealSection>
-          <h2 className="text-3xl md:text-4xl text-center mb-12 font-jamjuree font-700">
-            <span className="text-corporate">Depoimentos de</span> <span className="text-emphasis">Nossos Clientes</span>
+          <h2 className="text-3xl md:text-4xl text-center mb-12">
+            <span className="font-jamjuree font-700 text-white mx-1">Depoimentos</span>
+            <span className="font-jakarta font-800 text-[#29C8EB] mx-1">de</span>
+            <span className="font-poppins font-600 text-white mx-1">Nossos</span>
+            <span className="font-caveat font-bold text-[#29C8EB] mx-1">Clientes</span>
           </h2>
         </RevealSection>
 
@@ -44,10 +47,10 @@ export default function HomeTestimonials({ testimonials }: HomeTestimonialsProps
                 <SwiperSlide key={index}>
                   <div className="bg-slate-800 rounded-xl p-6 h-full flex flex-col justify-between min-h-[320px] max-h-[320px]">
                     <div className="flex-1">
-                      <Quote className="w-8 h-8 text-primary mb-4 flex-shrink-0" />
+                      <Quote className="w-8 h-8 text-[#29C8EB] mb-4 flex-shrink-0" />
                       <p className="text-gray-300 text-base leading-relaxed mb-6 line-clamp-6">"{testimonial.quote}"</p>
                     </div>
-                    <div className="text-primary font-semibold text-sm mt-auto pt-4 border-t border-slate-700">- {testimonial.author}</div>
+                    <div className="text-[#29C8EB] font-semibold text-sm mt-auto pt-4 border-t border-slate-700">- {testimonial.author}</div>
                   </div>
                 </SwiperSlide>
               ))}

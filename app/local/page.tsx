@@ -19,26 +19,28 @@ const Localizacao = () => {
 
             {/* Informações de Contato */}
             <RevealSection delay={0.2}>
-              <h2 className="text-3xl font-jamjuree font-700 mb-8">
-                Informações de Contato
+              <h2 className="text-3xl mb-8">
+                <span className="font-jamjuree font-700 text-white mx-1">Informações</span>
+                <span className="font-jakarta font-800 text-[#29C8EB] mx-1">de</span>
+                <span className="font-poppins font-600 text-white mx-1">Contato</span>
               </h2>
 
               <div className="space-y-6 mb-8">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-6 h-6 text-primary" />
+                  <div className="w-12 h-12 rounded-full bg-[#29C8EB]/10 flex items-center justify-center flex-shrink-0">
+                    <Phone className="w-6 h-6 text-[#29C8EB]" />
                   </div>
                   <div>
                     <h3 className="font-jamjuree font-600 text-lg mb-1">Telefone</h3>
-                    <a href="tel:+5521351324" className="text-muted-foreground hover:text-primary transition-colors">
+                    <a href="tel:+5521351324" className="text-muted-foreground hover:text-[#29C8EB] transition-colors">
                       (21) 3513-2404
                     </a>
                   </div>
                 </div>                
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-6 h-6 text-primary" />
+                  <div className="w-12 h-12 rounded-full bg-[#29C8EB]/10 flex items-center justify-center flex-shrink-0">
+                    <MapPin className="w-6 h-6 text-[#29C8EB]" />
                   </div>
                   <div>
                     <h3 className="font-jamjuree font-600 text-lg mb-2">Localização</h3>

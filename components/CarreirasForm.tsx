@@ -142,7 +142,7 @@ export default function CarreirasForm({ onSubmit }: CarreirasFormProps) {
               <Button
                 type="submit"
                 disabled={isLoading}
-                className="w-full bg-primary hover:bg-primary/90 text-background font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full bg-[#29C8EB] hover:bg-[#29C8EB]/90 text-background font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isLoading ? "Enviando..." : "Enviar Candidatura"}
               </Button>
