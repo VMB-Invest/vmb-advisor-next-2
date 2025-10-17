@@ -59,7 +59,7 @@ export default function CarreirasForm({ onSubmit }: CarreirasFormProps) {
           variant: "destructive",
         });
       }
-    } catch (error) {
+    } catch {
       toast({
         title: "Erro ao enviar candidatura",
         description: "Por favor, tente novamente ou entre em contato por telefone.",

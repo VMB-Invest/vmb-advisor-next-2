@@ -43,7 +43,7 @@ export default function ContactForm({ onSubmitSuccess }: ContactFormProps) {
           variant: "destructive",
         });
       }
-    } catch (error) {
+    } catch {
       toast({
         title: "Erro ao enviar mensagem",
         description: "Por favor, tente novamente ou entre em contato por telefone.",

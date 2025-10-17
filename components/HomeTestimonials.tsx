@@ -48,7 +48,7 @@ export default function HomeTestimonials({ testimonials }: HomeTestimonialsProps
                   <div className="bg-slate-800 rounded-xl p-6 h-full flex flex-col justify-between min-h-[320px] max-h-[320px]">
                     <div className="flex-1">
                       <Quote className="w-8 h-8 text-[#29C8EB] mb-4 flex-shrink-0" />
-                      <p className="text-gray-300 text-base leading-relaxed mb-6 line-clamp-6">"{testimonial.quote}"</p>
+                      <p className="text-gray-300 text-base leading-relaxed mb-6 line-clamp-6">&ldquo;{testimonial.quote}&rdquo;</p>
                     </div>
                     <div className="text-[#29C8EB] font-semibold text-sm mt-auto pt-4 border-t border-slate-700">- {testimonial.author}</div>
                   </div>

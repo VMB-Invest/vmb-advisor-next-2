@@ -27,15 +27,6 @@ const valores = [
     },
   ];
 
-  const diferenciais = [
-    "Equipe altamente qualificada e experiente",
-    "Atendimento personalizado e exclusivo",
-    "Soluções customizadas para cada perfil",
-    "Tecnologia de ponta para análise e gestão",
-    "Transparência total em processos e resultados",
-    "Acompanhamento contínuo e proativo",
-  ];
-
 export default function Sobre() {
   return (
     <div className="min-h-screen bg-background">
