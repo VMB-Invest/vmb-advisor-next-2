@@ -31,22 +31,22 @@ export default function ContactForm({ onSubmitSuccess }: ContactFormProps) {
 
       if (result.success) {
         toast({
-          title: "Mensagem enviada com sucesso!",
-          description: "Entraremos em contato em breve.",
+          title: "✅ Mensagem enviada com sucesso!",
+          description: "Recebemos sua mensagem e entraremos em contato em breve.",
         });
         setFormData({ name: "", email: "", phone: "", message: "" });
         onSubmitSuccess?.();
       } else {
         toast({
-          title: "Erro ao enviar mensagem",
-          description: "Por favor, tente novamente ou entre em contato por telefone.",
+          title: "❌ Erro ao enviar mensagem",
+          description: "Não foi possível enviar sua mensagem. Por favor, tente novamente ou entre em contato por telefone.",
           variant: "destructive",
         });
       }
     } catch {
       toast({
-        title: "Erro ao enviar mensagem",
-        description: "Por favor, tente novamente ou entre em contato por telefone.",
+        title: "❌ Erro ao enviar mensagem",
+        description: "Ocorreu um erro inesperado. Por favor, tente novamente ou entre em contato por telefone: (11) 3078-2858",
         variant: "destructive",
       });
     } finally {

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import {  Bai_Jamjuree, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "@/components/ui/toaster";
 
 const baiJamjuree = Bai_Jamjuree({
   variable: "--font-bai-jamjuree",
@@ -30,6 +31,7 @@ export default function RootLayout({
         className={`${baiJamjuree.variable} ${plusJakartaSans.variable} antialiased`}
       >
         {children}
+        <Toaster />
       </body>
     </html>
   );

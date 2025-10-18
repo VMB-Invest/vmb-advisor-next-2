@@ -2,8 +2,7 @@ import { MapPin, Phone } from "lucide-react";
 import RevealSection from "@/components/RevealSection";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import ContactLocalForm from "@/components/ContactLocalForm";
-import { submitContactForm } from "@/app/actions/contato";
+import LocalContactSection from "@/components/LocalContactSection";
 
 const Localizacao = () => {
   return (
@@ -15,7 +14,7 @@ const Localizacao = () => {
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12">
             {/* Formulário */}
-            <ContactLocalForm onSubmit={submitContactForm} />
+            <LocalContactSection />
 
             {/* Informações de Contato */}
             <RevealSection delay={0.2}>

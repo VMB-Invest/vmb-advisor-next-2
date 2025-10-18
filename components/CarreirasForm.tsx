@@ -48,21 +48,21 @@ export default function CarreirasForm({ onSubmit }: CarreirasFormProps) {
 
       if (result.success) {
         toast({
-          title: "Candidatura enviada com sucesso!",
-          description: "Analisaremos seu currículo e retornaremos em breve.",
+          title: "✅ Candidatura enviada com sucesso!",
+          description: "Recebemos sua candidatura e analisaremos seu currículo. Retornaremos em breve!",
         });
         setFormData({ name: "", email: "", phone: "", area: "", message: "" });
       } else {
         toast({
-          title: "Erro ao enviar candidatura",
-          description: result.error || "Por favor, tente novamente ou entre em contato por telefone.",
+          title: "❌ Erro ao enviar candidatura",
+          description: result.error || "Não foi possível enviar sua candidatura. Por favor, tente novamente ou entre em contato por telefone.",
           variant: "destructive",
         });
       }
     } catch {
       toast({
-        title: "Erro ao enviar candidatura",
-        description: "Por favor, tente novamente ou entre em contato por telefone.",
+        title: "❌ Erro ao enviar candidatura",
+        description: "Ocorreu um erro inesperado. Por favor, tente novamente ou entre em contato por telefone: (11) 3078-2858",
         variant: "destructive",
       });
     } finally {
@@ -71,20 +71,8 @@ export default function CarreirasForm({ onSubmit }: CarreirasFormProps) {
   };
 
   return (
-    <section className="py-12 sm:py-16 md:py-20">
-      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10">
-        <div className="max-w-2xl mx-auto">
-          <RevealSection>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-jamjuree font-700 text-center mb-3 sm:mb-4 px-2">
-              Candidatura Espontânea
-            </h2>
-            <p className="text-center text-muted-foreground text-sm sm:text-base mb-6 sm:mb-8 px-4">
-              Não encontrou a vaga ideal? Envie seu currículo e entraremos em contato quando surgir uma oportunidade
-            </p>
-          </RevealSection>
-
-          <RevealSection delay={0.2}>
-            <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5">
+    <RevealSection delay={0.2}>
+      <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5">
               <div>
                 <Input
                   type="text"
@@ -147,9 +135,6 @@ export default function CarreirasForm({ onSubmit }: CarreirasFormProps) {
                 {isLoading ? "Enviando..." : "Enviar Candidatura"}
               </Button>
             </form>
-          </RevealSection>
-        </div>
-      </div>
-    </section>
+    </RevealSection>
   );
 }
