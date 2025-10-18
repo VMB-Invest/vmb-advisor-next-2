@@ -22,11 +22,11 @@ export default function HomeTestimonials({ testimonials }: HomeTestimonialsProps
     <section className="py-12 sm:py-16 md:py-20 bg-background">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10">
         <RevealSection>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl text-center mb-8 sm:mb-12 px-2">
-            <span className="font-jamjuree font-700 text-white mx-1">Depoimentos</span>
-            <span className="font-jakarta font-800 text-[#29C8EB] mx-1">de</span>
-            <span className="font-poppins font-600 text-white mx-1">Nossos</span>
-            <span className="font-caveat font-bold text-[#29C8EB] mx-1">Clientes</span>
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center mb-8 sm:mb-12 px-2 leading-tight">
+            <span className="font-jamjuree font-700 text-white">Depoimentos </span>
+            <span className="font-jakarta font-800 text-[#29C8EB]">de </span>
+            <span className="font-poppins font-600 text-white">Nossos </span>
+            <span className="font-caveat font-bold text-[#29C8EB]">Clientes</span>
           </h2>
         </RevealSection>
 

@@ -44,12 +44,12 @@ const Carreiras = () => {
       <section className="py-12 sm:py-16 md:py-20">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10">
           <RevealSection>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl text-center mb-3 sm:mb-4 px-2">
-              <span className="font-jamjuree font-700 text-white mx-1">Por</span>
-              <span className="font-jakarta font-800 text-[#29C8EB] mx-1">que</span>
-              <span className="font-poppins font-600 text-white mx-1">trabalhar</span>
-              <span className="font-caveat font-bold text-[#29C8EB] mx-1">na</span>
-              <span className="font-jamjuree font-700 text-white mx-1">VMB Advisor?</span>
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center mb-3 sm:mb-4 px-2 leading-tight">
+              <span className="font-jamjuree font-700 text-white">Por </span>
+              <span className="font-jakarta font-800 text-[#29C8EB]">que </span>
+              <span className="font-poppins font-600 text-white">trabalhar </span>
+              <span className="font-caveat font-bold text-[#29C8EB]">na </span>
+              <span className="font-jamjuree font-700 text-white">VMB Advisor?</span>
             </h2>
             <p className="text-center text-muted-foreground text-sm sm:text-base mb-8 sm:mb-12 max-w-2xl mx-auto px-4">
               Oferecemos um ambiente de trabalho inspirador e oportunidades de crescimento
@@ -75,9 +75,9 @@ const Carreiras = () => {
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10">
           <div className="max-w-2xl mx-auto">
             <RevealSection>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl text-center mb-3 sm:mb-4 px-2">
-                <span className="font-jamjuree font-700 text-white mx-1">Candidatura</span>
-                <span className="font-jakarta font-800 text-[#29C8EB] mx-1">Espontânea</span>
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center mb-3 sm:mb-4 px-2 leading-tight">
+                <span className="font-jamjuree font-700 text-white">Candidatura </span>
+                <span className="font-jakarta font-800 text-[#29C8EB]">Espontânea</span>
               </h2>
               <p className="text-center text-muted-foreground text-sm sm:text-base mb-6 sm:mb-8 px-4">
                 Não encontrou a vaga ideal? Envie seu currículo e entraremos em contato quando surgir uma oportunidade

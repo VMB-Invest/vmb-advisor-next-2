@@ -44,11 +44,11 @@ export default function Sobre() {
           <div className="absolute inset-0 bg-black/70" />
         </div>
         <div className="relative z-10 max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10 py-12 sm:py-16 md:py-20 text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-800 mb-4 sm:mb-6 text-white leading-tight">
-            <span className="font-jamjuree font-700 text-white mx-1">Sobre</span>
-            <span className="font-jakarta font-800 text-[#29C8EB] mx-1">a</span>
-            <span className="font-poppins font-600 text-white mx-1">VMB</span>
-            <span className="font-caveat font-bold text-[#29C8EB] mx-1">Advisor</span>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-800 mb-4 sm:mb-6 text-white leading-tight">
+            <span className="font-jamjuree font-700 text-white">Sobre </span>
+            <span className="font-jakarta font-800 text-[#29C8EB]">a </span>
+            <span className="font-poppins font-600 text-white">VMB </span>
+            <span className="font-caveat font-bold text-[#29C8EB]">Advisor</span>
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto px-4">
             Excelência em consultoria financeira há mais de uma década
@@ -61,9 +61,9 @@ export default function Sobre() {
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
             <RevealSection>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl mb-4 sm:mb-6 text-center lg:text-left">
-                <span className="font-jamjuree font-700 text-white mx-1">Nossa</span>
-                <span className="font-jakarta font-800 text-[#29C8EB] mx-1">História</span>
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-4 sm:mb-6 text-center lg:text-left leading-tight">
+                <span className="font-jamjuree font-700 text-white">Nossa </span>
+                <span className="font-jakarta font-800 text-[#29C8EB]">História</span>
               </h2>
               <div className="space-y-3 sm:space-y-4 text-muted-foreground text-sm sm:text-base text-center lg:text-left">
                 <p>
@@ -102,9 +102,9 @@ export default function Sobre() {
       <section className="py-12 sm:py-16 md:py-20 bg-black">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10">
           <RevealSection>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl text-center mb-8 sm:mb-12">
-              <span className="font-jamjuree font-700 text-white mx-1">Nossos</span>
-              <span className="font-jakarta font-800 text-[#29C8EB] mx-1">Pilares</span>
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center mb-8 sm:mb-12 leading-tight">
+              <span className="font-jamjuree font-700 text-white">Nossos </span>
+              <span className="font-jakarta font-800 text-[#29C8EB]">Pilares</span>
             </h2>
           </RevealSection>
 
@@ -127,10 +127,10 @@ export default function Sobre() {
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center mb-12 sm:mb-16">
             <RevealSection>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl mb-4 sm:mb-6 text-center lg:text-left">
-                <span className="font-jamjuree font-700 text-white mx-1">Reconhecimento</span>
-                <span className="font-jakarta font-800 text-[#29C8EB] mx-1">e</span>
-                <span className="font-poppins font-600 text-white mx-1">Excelência</span>
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-4 sm:mb-6 text-center lg:text-left leading-tight">
+                <span className="font-jamjuree font-700 text-white">Reconhecimento </span>
+                <span className="font-jakarta font-800 text-[#29C8EB]">e </span>
+                <span className="font-poppins font-600 text-white">Excelência</span>
               </h2>
               <p className="text-muted-foreground text-sm sm:text-base mb-3 sm:mb-4 text-center lg:text-left">
                 Nossa dedicação à excelência nos rendeu diversos prêmios e reconhecimentos no mercado financeiro.

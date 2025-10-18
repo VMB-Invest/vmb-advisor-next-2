@@ -34,9 +34,9 @@ export default function Equipe() {
       <section className="relative min-h-[350px] sm:min-h-[400px] flex items-center justify-center overflow-hidden bg-gradient-to-b from-black to-background">
         <div className="absolute inset-0 bg-[url('/api/placeholder/1920/600')] bg-cover bg-center opacity-20" />
         <div className="relative z-10 max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10 py-12 sm:py-16 md:py-20 text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-800 mb-4 sm:mb-6 text-white">
-            <span className="font-jamjuree font-700 text-white mx-1">Nossa</span>
-            <span className="font-jakarta font-800 text-[#29C8EB] mx-1">Equipe</span>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-800 mb-4 sm:mb-6 text-white leading-tight">
+            <span className="font-jamjuree font-700 text-white">Nossa </span>
+            <span className="font-jakarta font-800 text-[#29C8EB]">Equipe</span>
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto px-4">
             Profissionais altamente qualificados dedicados ao seu sucesso

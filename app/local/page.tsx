@@ -19,10 +19,10 @@ const Localizacao = () => {
 
             {/* Informações de Contato */}
             <RevealSection delay={0.2}>
-              <h2 className="text-2xl sm:text-3xl mb-6 sm:mb-8 text-center lg:text-left">
-                <span className="font-jamjuree font-700 text-white mx-1">Informações</span>
-                <span className="font-jakarta font-800 text-[#29C8EB] mx-1">de</span>
-                <span className="font-poppins font-600 text-white mx-1">Contato</span>
+              <h2 className="text-xl sm:text-2xl md:text-3xl mb-6 sm:mb-8 text-center lg:text-left leading-tight">
+                <span className="font-jamjuree font-700 text-white">Informações </span>
+                <span className="font-jakarta font-800 text-[#29C8EB]">de </span>
+                <span className="font-poppins font-600 text-white">Contato</span>
               </h2>
 
               <div className="space-y-5 sm:space-y-6 mb-6 sm:mb-8">

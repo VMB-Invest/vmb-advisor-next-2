@@ -164,10 +164,10 @@ export default function Home() {
         <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center mb-12 sm:mb-16 md:mb-20">
             <RevealSection>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl mb-4 sm:mb-6 text-center lg:text-left">
-                <span className="font-jamjuree font-700 text-gray-900 mx-1">Construa</span>
-                <span className="font-poppins font-600 text-[#29C8EB] mx-1">seu</span>
-                <span className="font-caveat font-bold text-gray-900 mx-1">legado</span>
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-4 sm:mb-6 text-center lg:text-left leading-tight">
+                <span className="font-jamjuree font-700 text-gray-900">Construa </span>
+                <span className="font-poppins font-600 text-[#29C8EB]">seu </span>
+                <span className="font-caveat font-bold text-gray-900">legado</span>
               </h2>
               <p className="text-gray-600 text-base sm:text-lg leading-relaxed text-center lg:text-left">Nosso propósito é fazer parte de todas as grandes conquistas da vida das pessoas.</p>
             </RevealSection>
@@ -192,11 +192,11 @@ export default function Home() {
             </RevealSection>
 
             <RevealSection delay={0.2}>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl mb-4 sm:mb-6 text-center lg:text-left">
-                <span className="font-jamjuree font-700 text-white mx-1">Sobre</span>
-                <span className="font-jakarta font-800 text-[#29C8EB] mx-1">a</span>
-                <span className="font-poppins font-600 text-white mx-1">VMB</span>
-                <span className="font-caveat font-bold text-[#29C8EB] mx-1">Advisor</span>
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-4 sm:mb-6 text-center lg:text-left leading-tight">
+                <span className="font-jamjuree font-700 text-white">Sobre </span>
+                <span className="font-jakarta font-800 text-[#29C8EB]">a </span>
+                <span className="font-poppins font-600 text-white">VMB </span>
+                <span className="font-caveat font-bold text-[#29C8EB]">Advisor</span>
               </h2>
               <p className="text-muted-foreground text-sm sm:text-base mb-3 sm:mb-4 text-center lg:text-left">Somos uma consultoria especializada em soluções financeiras estratégicas.</p>
               <p className="text-muted-foreground text-sm sm:text-base mb-4 sm:mb-6 text-center lg:text-left">Com anos de experiência no mercado, nossa equipe oferece atendimento personalizado.</p>
@@ -214,12 +214,12 @@ export default function Home() {
       <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-background to-black">
         <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-10 text-center">
           <RevealSection>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl mb-4 sm:mb-6 px-2">
-              <span className="font-jamjuree font-700 text-white mx-1">Pronto</span>
-              <span className="font-jakarta font-800 text-[#29C8EB] mx-1">para</span>
-              <span className="font-poppins font-600 text-white mx-1">transformar</span>
-              <span className="font-caveat font-bold text-[#29C8EB] mx-1">seu</span>
-              <span className="font-jamjuree font-700 text-white mx-1">patrimônio?</span>
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-4 sm:mb-6 px-2 leading-tight">
+              <span className="font-jamjuree font-700 text-white">Pronto </span>
+              <span className="font-jakarta font-800 text-[#29C8EB]">para </span>
+              <span className="font-poppins font-600 text-white">transformar </span>
+              <span className="font-caveat font-bold text-[#29C8EB]">seu </span>
+              <span className="font-jamjuree font-700 text-white">patrimônio?</span>
             </h2>
             <p className="text-muted-foreground text-sm sm:text-base mb-6 sm:mb-8 max-w-2xl mx-auto px-4">Entre em contato conosco e descubra como podemos ajudar você</p>
             <a href="https://api.whatsapp.com/send/?phone=5521972674227" target="_blank" rel="noopener noreferrer">
