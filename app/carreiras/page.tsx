@@ -47,7 +47,7 @@ const Carreiras = () => {
               <span className="font-jamjuree font-700 text-white">Por </span>
               <span className="font-jakarta font-800 text-[#29C8EB]">que </span>
               <span className="font-poppins font-600 text-white">trabalhar </span>
-              <span className="font-caveat font-bold text-[#29C8EB]">na </span>
+              <span className="font-caveat font-bold text-[#29C8EB]">com a{' '}</span>
               <span className="font-jamjuree font-700 text-white">VMB Advisor?</span>
             </h2>
             <p className="text-center text-muted-foreground text-sm sm:text-base mb-8 sm:mb-12 max-w-2xl mx-auto px-4">

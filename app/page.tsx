@@ -87,41 +87,51 @@ export default function Home() {
           </RevealSection>
         </div>
         <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-10 pt-8 sm:pt-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-stretch">
             {/* Conteúdo - Título e descrições - MOBILE PRIMEIRO */}
-            <RevealSection delay={0}>
+            <RevealSection delay={0} className="h-full">
               <div className="flex flex-col justify-start text-center lg:text-left order-1 lg:order-2">
                 <h2 className="text-3xl sm:text-4xl md:text-5xl mb-6 sm:mb-8 font-jamjuree font-700">
-                  <span className="text-white">Nossos</span> <span className="text-[#29C8EB]">Números</span> <span className="text-white">falam por si</span>
+                  <span className="text-white">Nossos</span> <span className="text-[#29C8EB]">números</span> <span className="text-white">falam por si</span>
                 </h2>
                 <p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">Nossa trajetória de sucesso é refletida nos números que conquistamos.</p>
-                <p className="text-gray-300 text-base sm:text-lg leading-relaxed">Estamos comprometidos em manter a excelência em cada interação e resultado entregue aos nossos clientes.</p>
+                <p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-6 sm:mb-8">Estamos comprometidos em manter a excelência em cada interação e resultado entregue aos nossos clientes.</p>
+                
+                {/* Imagem abaixo do texto */}
+                <div className="relative rounded-xl sm:rounded-2xl overflow-hidden h-[250px] sm:h-[300px] md:h-[350px]">
+                  <Image 
+                    src="/conference-room.jpg" 
+                    alt="Escritório VMB Advisor" 
+                    fill
+                    className="object-cover"
+                  />
+                </div>
               </div>
             </RevealSection>
 
             {/* Grid de números */}
-            <RevealSection delay={0.2}>
-              <div className="grid grid-cols-1 gap-4 sm:gap-6 order-2 lg:order-1">
+            <RevealSection delay={0.2} className="h-full">
+              <div className="grid grid-cols-1 gap-4 sm:gap-6 order-2 lg:order-1 h-full">
                 {/* Barra no topo - SOB CUSTÓDIA */}
-                <div className="bg-gradient-to-r from-[#29C8EB] to-[#29C8EB]/80 rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-[#29C8EB]/30 col-span-1">
+                <div className="bg-gradient-to-r from-[#29C8EB] to-[#29C8EB]/80 rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-[#29C8EB]/30 col-span-1 flex-shrink-0">
                   <div className="text-white text-xs sm:text-sm font-semibold uppercase tracking-wide mb-2">SOB CUSTÓDIA</div>
-                  <div className="text-4xl sm:text-5xl font-bold text-white">750M +</div>
+                  <div className="text-4xl sm:text-5xl font-bold text-white">+750 Milhões de reais</div>
                 </div>
                 
-                {/* Três boxes abaixo - Mobile: 3 colunas iguais */}
-                <div className="grid grid-cols-3 gap-3 sm:gap-4 md:gap-6">
-                  <div className="bg-background border-2 border-white rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6 flex flex-col justify-center items-center text-center min-h-[140px] sm:min-h-[180px] md:h-64">
-                    <div className="text-gray-300 text-[10px] sm:text-xs font-semibold uppercase tracking-wide mb-2 sm:mb-4">NPS</div>
+                {/* Três boxes abaixo - expandem para preencher o espaço restante */}
+                <div className="grid grid-cols-3 gap-3 sm:gap-4 md:gap-6 flex-1">
+                  <div className="bg-background border-2 border-white rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6 flex flex-col justify-center items-center text-center h-full">
+                    <div className="text-gray-300 text-[10px] sm:text-xs font-semibold uppercase tracking-wide mb-2">NPS</div>
                     <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#29C8EB]">94.4</div>
                   </div>
                   
-                  <div className="bg-background border-2 border-white rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6 flex flex-col justify-center items-center text-center min-h-[140px] sm:min-h-[180px] md:h-64">
-                    <div className="text-gray-300 text-[10px] sm:text-xs font-semibold uppercase tracking-wide mb-2 sm:mb-4">CLIENTES</div>
-                    <div className="text-2xl sm:text-3xl md:text-5xl font-bold text-[#29C8EB]">3700+</div>
+                  <div className="bg-background border-2 border-white rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6 flex flex-col justify-center items-center text-center h-full">
+                    <div className="text-gray-300 text-[10px] sm:text-xs font-semibold uppercase tracking-wide mb-2">CLIENTES</div>
+                    <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#29C8EB]">3700+</div>
                   </div>
                   
-                  <div className="bg-background border-2 border-white rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6 flex flex-col justify-center items-center text-center min-h-[140px] sm:min-h-[180px] md:h-64">
-                    <div className="text-gray-300 text-[10px] sm:text-xs font-semibold uppercase tracking-wide mb-2 sm:mb-4 text-center leading-tight">COLABORADORES</div>
+                  <div className="bg-background border-2 border-white rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6 flex flex-col justify-center items-center text-center h-full">
+                    <div className="text-gray-300 text-[10px] sm:text-xs font-semibold uppercase tracking-wide mb-2 leading-tight">COLABORADORES</div>
                     <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#29C8EB]">+121</div>
                   </div>
                 </div>
@@ -169,7 +179,12 @@ export default function Home() {
                 <span className="font-poppins font-600 text-[#29C8EB]">seu </span>
                 <span className="font-caveat font-bold text-gray-900">legado</span>
               </h2>
-              <p className="text-gray-600 text-base sm:text-lg leading-relaxed text-center lg:text-left">Nosso propósito é fazer parte de todas as grandes conquistas da vida das pessoas.</p>
+              <p className="text-gray-600 text-base sm:text-lg leading-relaxed text-center lg:text-left mb-4">
+                Nosso propósito é fazer parte de todas as grandes conquistas da vida das pessoas. Acreditamos que cada sonho merece um planejamento sólido e cada objetivo financeiro pode se tornar realidade com a estratégia certa.
+              </p>
+              <p className="text-gray-600 text-base sm:text-lg leading-relaxed text-center lg:text-left">
+                Seja na compra do primeiro imóvel, na realização de uma viagem dos sonhos, na educação dos filhos ou na construção de uma aposentadoria tranquila - estamos ao seu lado em cada etapa dessa jornada, transformando planos em conquistas tangíveis.
+              </p>
             </RevealSection>
 
             <RevealSection delay={0.2}>
