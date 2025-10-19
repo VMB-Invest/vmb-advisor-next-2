@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { ChevronDown } from "lucide-react";
 
 export default function HeroSection() {
   return (
@@ -53,6 +54,17 @@ export default function HeroSection() {
           <div className="hidden lg:block"></div>
         </div>
       </div>
+
+      {/* Mobile-only bouncing arrow indicator */}
+      <motion.div
+        aria-hidden
+        className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 md:hidden text-white/90 pointer-events-none"
+        initial={{ y: 0, opacity: 0.9 }}
+        animate={{ y: [0, -8, 0], opacity: [0.7, 1, 0.7] }}
+        transition={{ duration: 1.2, repeat: Infinity, ease: "easeInOut" }}
+      >
+        <ChevronDown className="w-8 h-8 drop-shadow-lg" />
+      </motion.div>
 
     </section>
   );
