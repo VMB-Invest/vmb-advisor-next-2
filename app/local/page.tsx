@@ -3,6 +3,16 @@ import RevealSection from "@/components/RevealSection";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import LocalContactSection from "@/components/LocalContactSection";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contato e Localização | VMB Advisor",
+  description:
+    "Fale com a VMB Advisor. Telefone, endereço e formulário de contato para atendimento personalizado.",
+  alternates: {
+    canonical: "/local",
+  },
+};
 
 const Localizacao = () => {
   return (

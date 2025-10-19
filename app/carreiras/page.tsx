@@ -4,6 +4,16 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CarreirasHero from "@/components/CarreirasHero";
 import CarreirasFormSection from "@/components/CarreirasFormSection";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Carreiras na VMB Advisor",
+  description:
+    "Junte-se à VMB Advisor e desenvolva sua carreira em um time de alta performance no mercado financeiro.",
+  alternates: {
+    canonical: "/carreiras",
+  },
+};
 
 const Carreiras = () => {
   const beneficios = [

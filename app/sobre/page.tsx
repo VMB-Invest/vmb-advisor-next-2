@@ -1,4 +1,14 @@
 import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Sobre a VMB Advisor",
+  description:
+    "Conheça a história, missão e valores da VMB Advisor – excelência em consultoria financeira.",
+  alternates: {
+    canonical: "/sobre",
+  },
+};
 import { Target, Eye, Award, TrendingUp } from "lucide-react";
 import RevealSection from "@/components/RevealSection";
 import Header from "@/components/Header";

@@ -6,6 +6,16 @@ import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import HomeTestimonials from "@/components/HomeTestimonials";
 import { Button } from "@/components/ui/button";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Consultoria Financeira, Investimentos e Planejamento",
+  description:
+    "VMB Advisor: consultoria financeira completa para investir, proteger e crescer seu patrimônio com segurança.",
+  alternates: {
+    canonical: "/",
+  },
+};
 
 const services = [
   {

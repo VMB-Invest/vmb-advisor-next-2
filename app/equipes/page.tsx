@@ -3,6 +3,16 @@ import { Linkedin, Mail } from "lucide-react";
 import RevealSection from "@/components/RevealSection";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Nossa Equipe | VMB Advisor",
+  description:
+    "Conheça a equipe de especialistas da VMB Advisor dedicada ao seu sucesso financeiro.",
+  alternates: {
+    canonical: "/equipes",
+  },
+};
 
 const equipe = [
     {
