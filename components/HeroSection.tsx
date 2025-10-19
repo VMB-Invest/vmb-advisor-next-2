@@ -5,18 +5,27 @@ import { motion } from "framer-motion";
 export default function HeroSection() {
   return (
     <section className="relative min-h-[500px] sm:min-h-[550px] md:min-h-[600px] flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="w-full h-full object-cover"
-        >
-          <source src="https://pub-db48207f42de49e7b9575db65c6f484f.r2.dev/INSTITUCIONAL.mp4" type="video/mp4" />
-        </video>
-        <div className="absolute inset-0 bg-black/75" />          
+        <div className="absolute inset-0">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full object-cover"
+            >
+              <source
+                src="https://pub-db48207f42de49e7b9575db65c6f484f.r2.dev/INSTITUCIONAL.mp4"
+                type="video/mp4"
+              />
+          </video>
+
+        {/* Overlay escura (já existente) */}
+        <div className="absolute inset-0 bg-black/75" />
+
+        {/* Fade-out inferior para transição suave */}
+        <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-[#161616] to-transparent pointer-events-none" />
       </div>
+
       <div className="w-full relative z-10 max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10 py-12 sm:py-16 md:py-20">
         <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 items-center min-h-[350px] sm:min-h-[400px]">
           <motion.div
@@ -44,6 +53,7 @@ export default function HeroSection() {
           <div className="hidden lg:block"></div>
         </div>
       </div>
+
     </section>
   );
 }
