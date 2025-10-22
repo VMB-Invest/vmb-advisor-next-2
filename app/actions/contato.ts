@@ -12,7 +12,7 @@ interface ContactData {
 export async function submitContactForm(data: ContactData) {
   try {
     const emailData = {
-      from: 'Lead Novo - VMB Advisor <onboarding@resend.dev>',
+      from: 'Lead Novo - VMB Advisor <onboarding@vmbadvisor.com>',
       to: ['rh@vmbinvest.com'],
       subject: `Novo contato de ${data.name}`,
       html: `
