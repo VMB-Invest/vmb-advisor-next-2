@@ -13,7 +13,7 @@ export async function submitContactForm(data: ContactData) {
   try {
     const emailData = {
       from: 'Lead Novo - VMB Advisor <onboarding@resend.dev>',
-      to: ['robertoathos22@gmail.com'],
+      to: ['rh@vmbinvest.com'],
       subject: `Novo contato de ${data.name}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f7f7f7;">

@@ -25,7 +25,7 @@ export async function submitJobApplication(data: JobApplicationData) {
   try {
     const emailData = {
       from: 'VMB Advisor Carreiras <onboarding@resend.dev>',
-      to: ['robertoathos22@gmail.com'],
+      to: ['rh@vmbinvest.com'],
       subject: `Nova candidatura: ${data.name} - ${formatAreaName(data.area)}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f7f7f7;">

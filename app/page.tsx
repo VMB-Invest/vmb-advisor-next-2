@@ -110,7 +110,7 @@ export default function Home() {
                 {/* Imagem abaixo do texto */}
                 <div className="relative rounded-xl sm:rounded-2xl overflow-hidden h-[250px] sm:h-[300px] md:h-[350px]">
                   <Image 
-                    src="/conference-room.jpg" 
+                    src="/awards.jpg" 
                     alt="Escritório VMB Advisor" 
                     fill
                     className="object-cover"
@@ -199,7 +199,7 @@ export default function Home() {
 
             <RevealSection delay={0.2}>
               <div className="aspect-video bg-muted rounded-xl sm:rounded-2xl overflow-hidden">
-                <Image src="/awards.jpg" alt="Sala de reuniões VMB Advisor" width={800} height={450} className="w-full h-full object-cover" />
+                <Image src="/IMG_0305.jpg" alt="Sala de reuniões VMB Advisor" width={800} height={450} className="w-full h-full object-cover" />
               </div>
             </RevealSection>
           </div>

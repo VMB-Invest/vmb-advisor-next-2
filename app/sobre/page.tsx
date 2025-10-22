@@ -96,7 +96,7 @@ export default function Sobre() {
             <RevealSection delay={0.2}>
               <div className="aspect-video bg-muted rounded-lg overflow-hidden">
                 <Image 
-                  src="/conference-room.jpg" 
+                  src="/IMG_0306.jpg" 
                   alt="Sala de reuniões VMB Advisor"
                   width={800}
                   height={450}
