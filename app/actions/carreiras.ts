@@ -24,7 +24,7 @@ const formatAreaName = (area: string) => {
 export async function submitJobApplication(data: JobApplicationData) {
   try {
     const emailData = {
-      from: 'VMB Advisor Carreiras <onboarding@resend.dev>',
+      from: 'VMB Advisor Carreiras <onboarding@vmbadvisor.com>',
       to: ['rh@vmbinvest.com'],
       subject: `Nova candidatura: ${data.name} - ${formatAreaName(data.area)}`,
       html: `
