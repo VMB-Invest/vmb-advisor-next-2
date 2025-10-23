@@ -87,10 +87,10 @@ export default function Home() {
         <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 z-20 w-full px-4 max-w-[1280px]">
           <RevealSection>
             <div className="hidden sm:flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6">
-              <a href="https://api.whatsapp.com/send/?phone=5521972674227&text=Ol%C3%A1%2C+tenho+interesse+em+me+planejar+financeiramente." target="_blank" rel="noopener noreferrer" className="w-full sm:w-64">
+              <a href="https://api.whatsapp.com/send/?phone=5521968316667&text=Ol%C3%A1%2C+tenho+interesse+em+me+planejar+financeiramente." target="_blank" rel="noopener noreferrer" className="w-full sm:w-64">
                 <Button className="w-full bg-white hover:underline text-black font-semibold px-6 sm:px-8 py-3 sm:py-4 text-xs sm:text-sm uppercase tracking-wide shadow-lg cursor-pointer">SEJA CLIENTE</Button>
               </a>            
-              <a href="https://api.whatsapp.com/send/?phone=5521972674227&text=Ol%C3%A1%21+Gostaria+de+entrar+em+contato+com+um+especialista+em+Financial+Advisor." target="_blank" rel="noopener noreferrer" className="w-full sm:w-64">
+              <a href="https://api.whatsapp.com/send/?phone=5521968316667&text=Ol%C3%A1%21+Gostaria+de+entrar+em+contato+com+um+especialista+em+Financial+Advisor." target="_blank" rel="noopener noreferrer" className="w-full sm:w-64">
                 <Button className="w-full bg-[#29C8EB] hover:underline text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 text-xs sm:text-sm uppercase tracking-wide shadow-lg cursor-pointer">Planner financeiro</Button>
               </a>
             </div>
@@ -226,7 +226,7 @@ export default function Home() {
               <p className="text-muted-foreground text-sm sm:text-base mb-3 sm:mb-4 text-center lg:text-left">Somos uma consultoria especializada em soluções financeiras estratégicas.</p>
               <p className="text-muted-foreground text-sm sm:text-base mb-4 sm:mb-6 text-center lg:text-left">Com anos de experiência no mercado, nossa equipe oferece atendimento personalizado.</p>
               <div className="flex justify-center lg:justify-start">
-                <a href="https://api.whatsapp.com/send/?phone=5521972674227" target="_blank" rel="noopener noreferrer">
+                <a href="https://api.whatsapp.com/send/?phone=5521968316667" target="_blank" rel="noopener noreferrer">
                   <Button className="border-[#29C8EB] text-white hover:underline cursor-pointer text-sm sm:text-base">Saiba Mais <ArrowRight className="ml-2 w-4 h-4" /></Button>
                 </a>
               </div>
@@ -247,7 +247,7 @@ export default function Home() {
               <span className="font-jamjuree font-700 text-white">patrimônio?</span>
             </h2>
             <p className="text-muted-foreground text-sm sm:text-base mb-6 sm:mb-8 max-w-2xl mx-auto px-4">Entre em contato conosco e descubra como podemos ajudar você</p>
-            <a href="https://api.whatsapp.com/send/?phone=5521972674227" target="_blank" rel="noopener noreferrer">
+            <a href="https://api.whatsapp.com/send/?phone=5521968316667" target="_blank" rel="noopener noreferrer">
               <Button className="bg-[#29C8EB] hover:bg-[#29C8EB]/90 text-background font-semibold cursor-pointer text-sm sm:text-base px-6 sm:px-8">Fale com um Especialista <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" /></Button>
             </a>
           </RevealSection>

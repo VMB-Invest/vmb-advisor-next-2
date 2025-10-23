@@ -60,7 +60,7 @@ const Header = () => {
                   )}
                 </Link>
               ))}
-              <a href="https://api.whatsapp.com/send/?phone=5521972674227&text=Ol%C3%A1%21+Gostaria+de+iniciar+uma+mentoria+de+investimentos+com+a+VMB+Advisor.&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
+              <a href="https://api.whatsapp.com/send/?phone=5521968316667&text=Ol%C3%A1%21+Gostaria+de+iniciar+uma+mentoria+de+investimentos+com+a+VMB+Advisor.&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
                 <Button className="bg-[#29C8EB] hover:bg-[#29C8EB]/90 text-white font-medium px-6 py-2 text-sm cursor-pointer">
                   Iniciar mentoria
                 </Button>
@@ -93,19 +93,19 @@ const Header = () => {
                   </Link>
                 ))}
                 <div className="pt-4 space-y-3">
-                  <a href="https://api.whatsapp.com/send/?phone=5521972674227&text=Ol%C3%A1%21+Gostaria+de+iniciar+uma+mentoria+de+investimentos+com+a+VMB+Advisor.&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" onClick={() => setIsMenuOpen(false)}>
+                  <a href="https://api.whatsapp.com/send/?phone=5521968316667&text=Ol%C3%A1%21+Gostaria+de+iniciar+uma+mentoria+de+investimentos+com+a+VMB+Advisor.&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" onClick={() => setIsMenuOpen(false)}>
                     <Button className="bg-[#29C8EB] hover:bg-[#29C8EB]/90 text-white font-semibold w-full cursor-pointer">
                       INICIAR MENTORIA
                     </Button>
                   </a>
                   
                   <div className="border-t border-white/20 pt-3 space-y-3">
-                    <a href="https://api.whatsapp.com/send/?phone=5521972674227&text=Ol%C3%A1%2C+tenho+interesse+em+me+planejar+financeiramente.&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" onClick={() => setIsMenuOpen(false)}>
+                    <a href="https://api.whatsapp.com/send/?phone=5521968316667&text=Ol%C3%A1%2C+tenho+interesse+em+me+planejar+financeiramente.&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" onClick={() => setIsMenuOpen(false)}>
                       <Button size="sm" className="bg-white mb-4 hover:bg-gray-100 text-black font-semibold w-full text-xs uppercase tracking-wide cursor-pointer">
                         SEJA CLIENTE
                       </Button>
                     </a>                   
-                    <a href="https://api.whatsapp.com/send/?phone=5521972674227&text=Ol%C3%A1%21+Gostaria+de+entrar+em+contato+com+um+especialista+em+Financial+Advisor.&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" onClick={() => setIsMenuOpen(false)}>
+                    <a href="https://api.whatsapp.com/send/?phone=5521968316667&text=Ol%C3%A1%21+Gostaria+de+entrar+em+contato+com+um+especialista+em+Financial+Advisor.&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" onClick={() => setIsMenuOpen(false)}>
                       <Button size="sm" className="bg-[#29C8EB] hover:bg-[#29C8EB]/90 text-white font-semibold w-full text-xs uppercase tracking-wide cursor-pointer">
                         Planner financeiro
                       </Button>
