@@ -137,7 +137,7 @@ export default function Home() {
                   
                   <div className="bg-background border-2 border-white rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6 flex flex-col justify-center items-center text-center h-full">
                     <div className="text-gray-300 text-[10px] sm:text-xs font-semibold uppercase tracking-wide mb-2">CLIENTES</div>
-                    <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#29C8EB]">3700+</div>
+                    <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#29C8EB]">+3700</div>
                   </div>
                   
                   <div className="bg-background border-2 border-white rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6 flex flex-col justify-center items-center text-center h-full">
