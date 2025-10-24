@@ -62,7 +62,7 @@ const Header = () => {
               ))}
               <a href="https://api.whatsapp.com/send/?phone=5521968316667&text=Ol%C3%A1%21+Gostaria+de+iniciar+uma+mentoria+de+investimentos+com+a+VMB+Advisor.&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
                 <Button className="bg-[#29C8EB] hover:bg-[#29C8EB]/90 text-white font-medium px-6 py-2 text-sm cursor-pointer">
-                  Iniciar mentoria
+                  Iniciar consultoria
                 </Button>
               </a>
             </div>
@@ -95,7 +95,7 @@ const Header = () => {
                 <div className="pt-4 space-y-3">
                   <a href="https://api.whatsapp.com/send/?phone=5521968316667&text=Ol%C3%A1%21+Gostaria+de+iniciar+uma+mentoria+de+investimentos+com+a+VMB+Advisor.&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" onClick={() => setIsMenuOpen(false)}>
                     <Button className="bg-[#29C8EB] hover:bg-[#29C8EB]/90 text-white font-semibold w-full cursor-pointer">
-                      INICIAR MENTORIA
+                      INICIAR CONSULTORIA
                     </Button>
                   </a>
                   

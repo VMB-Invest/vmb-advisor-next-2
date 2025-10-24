@@ -61,7 +61,7 @@ export default function Sobre() {
             <span className="font-caveat font-bold text-[#29C8EB]">Advisor</span>
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto px-4">
-            Excelência em consultoria financeira há mais de uma década
+            Excelência em consultoria financeira
           </p>
         </div>
       </section>
